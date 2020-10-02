@@ -12,7 +12,9 @@ for file in os.listdir(path):
     f_img = path+"/"+file
     print("resizing " + f_img)
     img = Image.open(f_img)
-    exif = img.info['exif']   # get exif_data
+    exif = b''  # init with an empty bytearray
+    if 'exif' in img.info:
+        exif = img.info['exif']   # get exif_data
     img = img.resize((1280,960))
     img.save(f_img, exif=exif)
 
