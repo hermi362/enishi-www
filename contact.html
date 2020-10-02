@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154862568-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154862568-1');
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="スタジオ縁,船橋,造園,植木,手入れ,消毒,害虫,伐採,庭造り,千葉">
+<meta name="description" content="お庭の手入れから、作庭までお気軽に問い合わせ下さい。(壁面緑化、屋上緑化、造園、舗装、店舗デザイン、コンサルティング、スタジオ縁、千葉)">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<meta name="format-detection" content="telephone=no" />
+
+<!-- ファビコン -->
+<link rel="icon" href="img/common/cmn_favicon.png" type="image/png"/>
+
+<title>株式会社スタジオ縁￤船橋市から全国へ多様な緑化を提案します</title>
+
+<!-- StyleSheet -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css"><!-- web font -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css"><!-- slider -->
+
+<!-- JavaScript -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script><!-- slider -->
+
+<script type="text/javascript" src="js/header.js"></script><!-- ヘッダ書き込み用 -->
+<script type="text/javascript" src="js/footer.js"></script><!-- フッタ書き込み用 -->
+
+<script>
+
+/* 波紋のエフェクト 読み込みが終わってから処理を行う  */
+/*$(window).load(function () {
+	$('#frame').ripples({
+	    resolution: 512,
+	    dropRadius: 20,
+	    perturbance: 0.04,
+	});
+}); */
+
+$(function(){
+	// MainSlider
+  $('#sliderPromo').bxSlider({
+    controls: true,
+    speed: 800,
+    pause: 7000,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: true,
+    slideMargin: 0,
+    minSlides: 1,
+    maxSlides: 1,
+    moveSlides: 1
+  });
+
+	// SubSlider
+  $('.slider_result').bxSlider({
+    controls: true,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: false,
+    slideWidth: 251,/*228*/
+    minSlides: 2,
+    maxSlides: 4,
+    slideMargin: 1,/*20*/
+    moveSlides: 1
+  });
+  
+  // 実績の紹介 個別ページ Slider
+  $('.gallery-list').bxSlider({
+    auto: true,
+    pause: 5000,
+    speed: 600,
+    mode: 'horizontal',  
+    infiniteLoop: false,
+    prevText: '<',  
+    nextText: '>',
+    slideWidth: 640,
+    pager: true,  
+    //easing: 'easeOutBounce',  
+    pagerCustom: '.gallery-pager'     
+  });
+
+	// gnavi
+	$('ul.gNavi li a').each(function(){
+		if($(this).attr('href') == location.href){
+			$(this).find('img').fadeTo(0,0);
+		}else{
+			$(this).hover(function(){
+		  	$(this).find('img').stop().fadeTo(200,0);
+	 		},function(){
+	  		if($(this).attr('href') != location.href){
+	 				$(this).find('img').stop().fadeTo(200,1);
+	    	}
+	  	});
+	  }
+	});
+	
+	// アコーディオンメニュー
+	$("#acMenu dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$(".acItem dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$("#menu").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav").slideToggle();
+	});
+	$("#menu2").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav2").slideToggle();
+	});
+	$("#menu3").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav3").slideToggle();
+	});
+	$("#menu4").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav4").slideToggle();
+	});
+
+	// to-top-btn
+	$(function () {
+		$(".pageTop").hide();
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.pageTop').fadeIn();
+			} else {
+				$('.pageTop').fadeOut();
+			}
+		});
+		$('.pageTop a').click(function () {
+			$('body,html').animate({scrollTop: 0}, 500);
+			return false;
+		});
+	});
+});
+
+</script>
+</head>
+
+<body>
+<div id="frame">
+<!----------------------------------------------------------->
+<!---------------------- ヘッダーエリア -------------------------->
+<!----------------------------------------------------------->
+
+		<script type="text/javascript">
+			header();
+		</script>
+
+<!----------------------------------------------------------->
+<!---------------------- メインコンテンツ ------------------------->
+<!----------------------------------------------------------->
+
+<style>
+/* メインエリアタイトルの画像サイズ */
+#mainArea h2 img {
+	width: 20px;
+	margin-right: 10px;
+}
+
+#contentsFrame {
+	margin-bottom: 0;
+}
+
+/* iframeの下隙間をなくす */
+iframe {
+    vertical-align: bottom;
+}
+</style>
+
+	<div id="pageInfo">
+		<h1 class="contact"><img src="img/contact/enishi_contact_title.png" alt="お問い合わせ" /></h1>
+	</div><!-- //#pageInfo -->
+	 
+	<div id="contentsFrame">
+		<div id="contentsArea">
+			<div id="mainArea">
+				<article>
+					<h2><img src="img/common/cmn_titlel_icon.png" /> お問い合わせフォーム</h2>
+					<div id="main">
+						<iframe src="form_contact.html" name="in" width="978" height="1130" frameborder="0" scrolling="no"></iframe>
+					</div>
+				</article>
+			</div><!-- //#mainArea -->
+		</div><!-- /#contentsArea -->
+	</div><!-- /#contentsFrame -->
+
+<!----------------------------------------------------------->
+<!---------------------- フッターエリア --------------------------->
+<!----------------------------------------------------------->
+
+		<script type="text/javascript">
+			footer();
+		</script>
+	
+</div><!-- /#frame -->
+
+</body>
+</html>

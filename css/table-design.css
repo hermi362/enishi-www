@@ -1,0 +1,19 @@
+table.infotable {
+	cellspacing:1px;
+	margin: auto;
+}
+
+th.item{
+	border:2px #808080 solid;
+	width:150px;
+	height:25px;
+	background-color: rgba(128,255,128,0.3);
+}
+
+td.detail{
+	border:2px #808080 solid;
+	width:500px;
+	height:25px;
+	background-color: rgba(128,255,255,0.1);
+	
+}

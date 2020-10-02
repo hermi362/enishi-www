@@ -1,0 +1,377 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154862568-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154862568-1');
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="スタジオ縁,船橋,造園,植木,手入れ,消毒,害虫,伐採,庭造り,千葉">
+<meta name="description" content="お庭の手入れから、作庭までお気軽に問い合わせ下さい。(壁面緑化、屋上緑化、造園、舗装、店舗デザイン、コンサルティング、スタジオ縁、千葉)">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<meta name="format-detection" content="telephone=no" />
+
+<!-- ファビコン -->
+<link rel="icon" href="img/common/cmn_favicon.png" type="image/png"/>
+
+<title>株式会社スタジオ縁￤船橋市から全国へ多様な緑化を提案します</title>
+
+<!-- StyleSheet -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css"><!-- web font -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css"><!-- slider -->
+
+<!-- JavaScript -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script><!-- slider -->
+<script type="text/javascript" src="js/jquery.ripples.js"></script><!-- 波紋エフェクト -->
+
+<script>
+
+/* 波紋のエフェクト 読み込みが終わってから処理を行う  */
+/*$(window).load(function () {
+	$('#frame').ripples({
+	    resolution: 512,
+	    dropRadius: 20,
+	    perturbance: 0.04,
+	});
+});*/
+
+$(function(){
+	// MainSlider
+  $('#sliderPromo').bxSlider({
+    controls: true,
+    speed: 800,
+    pause: 7000,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: true,
+    slideMargin: 0,
+    minSlides: 1,
+    maxSlides: 1,
+    moveSlides: 1
+  });
+
+	// SubSlider
+  $('.slider_result').bxSlider({
+    controls: true,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: false,
+    slideWidth: 251,/*228*/
+    minSlides: 2,
+    maxSlides: 4,
+    slideMargin: 1,/*20*/
+    moveSlides: 1
+  });
+  
+  // 実績の紹介 個別ページ Slider
+  $('.gallery-list').bxSlider({
+    auto: true,
+    pause: 5000,
+    speed: 600,
+    mode: 'horizontal',  
+    infiniteLoop: true,
+    prevText: '<',  
+    nextText: '>',
+    slideWidth: 640,
+    pager: true,  
+    //easing: 'easeOutBounce',  
+    pagerCustom: '.gallery-pager'     
+  });
+
+	// gnavi
+	$('ul.gNavi li a').each(function(){
+		if($(this).attr('href') == location.href){
+			$(this).find('img').fadeTo(0,0);
+		}else{
+			$(this).hover(function(){
+		  	$(this).find('img').stop().fadeTo(200,0);
+	 		},function(){
+	  		if($(this).attr('href') != location.href){
+	 				$(this).find('img').stop().fadeTo(200,1);
+	    	}
+	  	});
+	  }
+	});
+	
+	// アコーディオンメニュー
+	$("#acMenu dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$(".acItem dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$("#menu").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav").slideToggle();
+	});
+	$("#menu2").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav2").slideToggle();
+	});
+	$("#menu3").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav3").slideToggle();
+	});
+	$("#menu4").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav4").slideToggle();
+	});
+
+	// to-top-btn
+	$(function () {
+		$(".pageTop").hide();
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.pageTop').fadeIn();
+			} else {
+				$('.pageTop').fadeOut();
+			}
+		});
+		$('.pageTop a').click(function () {
+			$('body,html').animate({scrollTop: 0}, 500);
+			return false;
+		});
+	});
+});
+
+</script>
+</head>
+<body class="single-result">
+
+<!----------------------------------------------------------->
+<!---------------------- ヘッダーエリア -------------------------->
+<!----------------------------------------------------------->
+
+<div id="frame">
+	<div id="headerArea">
+		<div class="left">
+			<div class="logoBox">
+				<div class="logoMark"><a href="index.html">
+					<img class="hvr-push" src="img/common/cmn_header_logomark.png" alt="スタジオ縁 造園 緑化 ロゴ" />
+				</a></div>
+				<div class="logoType"><a href="index.html">
+					<img src="img/common/cmn_header_logotype.png" alt="スタジオ縁 造園 緑化 社名"/>
+				</a></div>
+			</div><!-- /.logoBox -->
+		</div>
+		<div class="right">
+			<a href="free.html"><p class="freeLogo hvr-grow-rotate"></p></a>
+		</div>
+	</div><!-- /#headerArea -->
+	
+	<!-- スマホメニュー -->
+	<div id="spMenuArea">
+		<dl id="acMenu">
+			<dt><i class="icon-reorder"></i>MENU</dt>
+			<dd> 
+				<ul>
+					<li><a href="index.html">トップページ</a></li>
+					<li><a href="about.html">会社概要</a></li>
+					<li><a href="green.html">グリーンデザイン</a></li>
+					<li><a href="works.html">実績の紹介</a></li>
+					<li><a href="flow.html">ご依頼の流れ</a></li>
+					<li><a href="product.html">施工の模様</a></li>
+					<li><a href="contact.html">お問い合わせ</a></li>
+					<li><a href="free.html">無料設計相談</a></li>
+				</ul>    
+			</dd>
+		</dl>
+	</div>
+
+	<!-- PCメニュー -->
+	<nav>
+		<div id="naviRap">
+			<div id="gNaviArea">
+				<ul class="gNavi">
+					<li class="menu5"><a href="about.html"><span class="menu_head">会</span>社概要<br><span class="menu_caption">About</span></a></li>
+					<li class="bar"><img src="img/common/cmn_hr.png" /></li>
+					<li class="menu1"><a href="green.html"><span class="menu_head">グ</span>リーンデザイン <br><span class="menu_caption">Green Design</span></a></li>
+					<li class="bar"><img src="img/common/cmn_hr.png" /></li>
+					<li class="menu2"><a href="works.html"><span class="menu_head">実</span>績の紹介<br><span class="menu_caption">Works</span></a></li>
+					<li class="bar"><img src="img/common/cmn_hr.png" /></li>
+					<li class="menu4"><a href="flow.html"><span class="menu_head">ご</span>依頼の流れ<br><span class="menu_caption">Work Flow</span></a></li>
+					<li class="bar"><img src="img/common/cmn_hr.png" /></li>
+					<li class="menu3"><a href="product.html"><span class="menu_head">施</span>工の模様<br><span class="menu_caption">Product</span></a></li>
+					<li class="bar"><img src="img/common/cmn_hr.png" /></li>
+					<li class="menu6"><a href="contact.html"><span class="menu_head">お</span>問い合わせ<br><span class="menu_caption">Contact</span></a></li>
+				</ul>
+			</div><!-- /#gNaviArea -->
+		</div>
+	</nav>
+
+<!----------------------------------------------------------->
+<!---------------------- メインコンテンツ ------------------------->
+<!----------------------------------------------------------->
+
+<style>
+h2 img {
+	width: 20px;
+	margin-right: 10px;
+}
+.resultHead .right img {
+	width: 30px;
+	height: 30px;
+}
+
+#return {
+	height: 100%;
+	text-align: center;
+	margin: 30px 0 10px 0;
+}
+#return p {
+	width: 35px;
+	height: 35px;
+	background-image: url("img/common/cmn_return_off.png");
+    background-repeat:no-repeat;
+    -moz-background-size:contain;
+	background-size:contain; 
+}
+#return p:hover {
+	background-image: url("img/common/cmn_return_on.png");
+}
+</style>
+
+	<div id="pageInfo">
+		<h1 class="workPage"><img src="img/works/enishi_works_title.png" alt="実績紹介" /></h1>    
+	</div><!-- //#pageInfo -->
+	
+	<div id="contentsFrame">
+		<div id="contentsArea">
+			<div id="mainArea">
+				<h2>
+					<img src="img/common/cmn_titlel_icon.png" />
+					<a href="works.html" style=" color:#ffffff;text-decoration:none;">実績一覧</a>
+					　＞　<a href="works_special.html" style=" color:#ffffff;text-decoration:none;">特種作業</a>
+				</h2>
+				<div class="resultHead">
+				<div class="left">
+				<p class="resultTitle">イオン相模原店</p>
+				<p>特種作業 / 装飾</p>
+				</div>
+				<div class="right">
+				<span><a href="http://www.aeon.jp/aeon/sagamihara/" target="_blank"><img class="hvr-pop" src="img/works/telus-link-icon.png"></a></span>
+				</div>
+				</div>
+				
+				<!-- no style in default gallery. -->
+				
+				<div id='gallery-1' class='gallery galleryid-5778 gallery-columns-3 gallery-size-large'>
+					<ul class='gallery-list'>
+						<li class='gallery-item landscape'>
+							<p><img src="img/work04/enishi_works04_img01.jpg" /></p>
+							<span class='wp-caption-text gallery-caption'>フードコート</span>
+						</li>
+						<li class='gallery-item landscape'>
+							<p><img src="img/work04/enishi_works04_img02.jpg" /></p>
+							<span class='wp-caption-text gallery-caption'>フードコート</span>
+						</li>
+						<li class='gallery-item landscape'>
+							<p><img src="img/work04/enishi_works04_img03.jpg" /></p>
+							<span class='wp-caption-text gallery-caption'>フードコート</span>
+						</li>
+						<li class='gallery-item landscape'>
+							<p><img src="img/work04/enishi_works04_img04.jpg" /></p>
+							<span class='wp-caption-text gallery-caption'>店舗内プランター</span>
+						</li>
+					</ul>
+				</div>
+				<div class='gallery-pager'>
+					<li class='gallery-item'><a data-slide-index="0" href=""><img src="img/work04/enishi_works04_img01.jpg" /></a></li>
+					<li class='gallery-item'><a data-slide-index="1" href=""><img src="img/work04/enishi_works04_img02.jpg" /></a></li>
+					<li class='gallery-item'><a data-slide-index="2" href=""><img src="img/work04/enishi_works04_img03.jpg" /></a></li>
+					<li class='gallery-item'><a data-slide-index="3" href=""><img src="img/work04/enishi_works04_img04.jpg" /></a></li>
+				</div>
+				<div id="return"><a href="works.html"><p class="hvr-push"></p></a></div>
+			</div>
+		</div>
+	</div>
+
+<!----------------------------------------------------------->
+<!---------------------- フッターエリア --------------------------->
+<!----------------------------------------------------------->
+
+	<!-- to-top-btn -->
+	<p class="pageTop"><a href="index.html" class="hvr-pulse-grow">
+		<img src="img/common/cmn_pagetop_icon.png">
+	</a></p>
+
+	<!-- フッターナビエリア -->
+	<div id="fNaviFrame">
+    <div id="fNaviArea">
+	    <nav>
+        <div class="area01">
+	        <ul>
+	          <li><a href="index.html">トップ</a></li>
+	          <li><a href="green.html">スタジオ縁が提案する緑化事業</a></li>
+	          <li><a href="works.html">実績の紹介</a></li>
+	        </ul>
+        </div>
+        <div class="area02">
+	        <ul>
+	          <li><a href="flow.html">ご依頼の流れ</a></li>
+	          <li><a href="about.html">会社概要</a></li>
+	          <li><a href="about.html#greeting">代表挨拶</a></li>
+	        </ul>
+        </div>
+        <div class="area03">
+	        <ul>
+	          <li><a href="product.html">施工模様の紹介</a></li>
+	          <li><a href="contact.html">お問い合わせ</a></li>
+	          <li><a href="free.html">無料設計相談</a></li>
+	        </ul>
+        </div>
+        <div class="area04">
+	        <ul>
+	          <li><a href="privacy.html">プライバシーポリシー</a></li>
+	          <li><a href="copy.html">著作権について</a></li>
+	        </ul>
+        </div>
+	    </nav>
+    </div><!-- /#fNaviArea -->
+	</div><!-- /#fNaviFrame -->
+	
+	<!-- フッター -->
+  <div id="footerArea">
+    <div class="area01">
+      <p class="logo03"><a href="index.html"><img class="hvr-wobble-top" src="img/common/cmn_footer_logo.png" alt="" /></a></p>
+    </div>
+    <div class="area02">
+      <ul>
+        <li class="li01">船橋本社事務所</li>
+        <li class="li02">〒273-0012　千葉県船橋市浜町1-6ファミリータウン5棟112</li>
+        <li class="tel"><img src="img/common/cmn_tel_img.png"><span>営業時間 08：00～17：00</span></li>
+        <li class="li03"><a href="contact.html">ファックスのお客様は会社概要ページより、問い合わせフォームもご用意しております。</a></li>
+      </ul> 
+    </div>
+    <div class="area03">
+      <ul>
+        <li><a class="hvr-push" href="https://www.google.co.jp/maps/place/%E3%80%92273-0012+%E5%8D%83%E8%91%89%E7%9C%8C%E8%88%B9%E6%A9%8B%E5%B8%82%E6%B5%9C%E7%94%BA%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%96%E2%88%92%EF%BC%95+%E8%88%B9%E6%A9%8B%E3%83%95%E3%82%A1%E3%83%9F%E3%83%AA%E3%83%BC%E3%82%BF%E3%82%A6%E3%83%B3%EF%BC%95%E5%8F%B7%E6%A3%9F/@35.6898888,139.9901302,17z/data=!3m1!4b1!4m2!3m1!1s0x60187fc5ae3d239b:0xeaa094e33198f759?hl=ja" target="_brank"><p class="access"></p>ｱｸｾｽﾏｯﾌﾟ</a></li>
+        <li><a class="hvr-push" href="contact.html"><p class="ml"></p></a></li>
+      </ul>
+    </div>
+  </div><!-- /#footerArea -->
+
+	<div id="copyFrame">
+	  <div id="copyArea">
+	    <p>&copy; 2015 <a href="index.html">船橋市から全国へ多様な緑化を提案します│株式会社 スタジオ縁</a> All Rights Reserved.</p>
+	  </div><!-- /#copyArea --> 
+	</div><!-- /#copyFrame -->
+	
+</div><!-- /#frame -->
+
+</body>
+</html>

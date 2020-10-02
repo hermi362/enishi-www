@@ -1,0 +1,795 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154862568-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154862568-1');
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="スタジオ縁,船橋,造園,植木,手入れ,消毒,害虫,伐採,庭造り,千葉">
+<meta name="description" content="お庭の手入れから、作庭までお気軽に問い合わせ下さい。(壁面緑化、屋上緑化、造園、舗装、店舗デザイン、コンサルティング、スタジオ縁、千葉)">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<meta name="format-detection" content="telephone=no" />
+
+<!-- ファビコン -->
+<link rel="icon" href="img/common/cmn_favicon.png" type="image/png"/>
+
+<title>株式会社スタジオ縁￤船橋市から全国へ多様な緑化を提案します</title>
+
+<!-- StyleSheet -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css"><!-- web font -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/image-effect.css"> <!-- 画像エフェクト用 -->
+<link rel="stylesheet" href="css/jquery.bxslider.css"><!-- slider -->
+
+<!-- JavaScript -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script><!-- slider -->
+<script type="text/javascript" src="js/jquery.ripples.js"></script><!-- 波紋エフェクト -->
+
+<script type="text/javascript" src="js/header.js"></script><!-- ヘッダ書き込み用 -->
+<script type="text/javascript" src="js/footer.js"></script><!-- フッタ書き込み用 -->
+
+<script>
+
+/* 波紋のエフェクト 読み込みが終わってから処理を行う  */
+/*$(window).load(function () {
+	$('#frame').ripples({
+	    resolution: 512,
+	    dropRadius: 20,
+	    perturbance: 0.04,
+	});
+});*/
+
+$(function(){
+	// MainSlider
+  $('#sliderPromo').bxSlider({
+    controls: true,
+    speed: 800,
+    pause: 7000,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: true,
+    slideMargin: 0,
+    minSlides: 1,
+    maxSlides: 1,
+    moveSlides: 1
+  });
+
+	// SubSlider
+  $('.slider_result').bxSlider({
+    controls: true,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: false,
+    slideWidth: 251,/*228*/
+    minSlides: 2,
+    maxSlides: 4,
+    slideMargin: 1,/*20*/
+    moveSlides: 1
+  });
+  
+  // 実績の紹介 個別ページ Slider
+  $('.gallery-list').bxSlider({
+    auto: true,
+    pause: 5000,
+    speed: 600,
+    mode: 'horizontal',  
+    infiniteLoop: false,
+    prevText: '<',  
+    nextText: '>',
+    slideWidth: 640,
+    pager: true,  
+    //easing: 'easeOutBounce',  
+    pagerCustom: '.gallery-pager'     
+  });
+
+	// gnavi
+	$('ul.gNavi li a').each(function(){
+		if($(this).attr('href') == location.href){
+			$(this).find('img').fadeTo(0,0);
+		}else{
+			$(this).hover(function(){
+		  	$(this).find('img').stop().fadeTo(200,0);
+	 		},function(){
+	  		if($(this).attr('href') != location.href){
+	 				$(this).find('img').stop().fadeTo(200,1);
+	    	}
+	  	});
+	  }
+	});
+	
+	// アコーディオンメニュー
+	$("#acMenu dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$(".acItem dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$("#menu").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav").slideToggle();
+	});
+	$("#menu2").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav2").slideToggle();
+	});
+	$("#menu3").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav3").slideToggle();
+	});
+	$("#menu4").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav4").slideToggle();
+	});
+
+	// to-top-btn
+	$(function () {
+		$(".pageTop").hide();
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.pageTop').fadeIn();
+			} else {
+				$('.pageTop').fadeOut();
+			}
+		});
+		$('.pageTop a').click(function () {
+			$('body,html').animate({scrollTop: 0}, 500);
+			return false;
+		});
+	});
+});
+
+</script>
+</head>
+<body>
+	<div id="frame">
+
+<!----------------------------------------------------------->
+<!---------------------- ヘッダーエリア -------------------------->
+<!----------------------------------------------------------->
+
+		<script type="text/javascript">
+			header();
+		</script>
+
+<!----------------------------------------------------------->
+<!---------------------- メインコンテンツ ------------------------->
+<!----------------------------------------------------------->
+
+	<style>
+	h2 img {
+		width: 20px;
+		margin-right: 10px;
+	}
+	.archiveNote img {
+		width: 20px;
+		height: 20px;
+	}
+	.archiveNote img.opacity {
+		opacity: 0.5 ;
+		filter: alpha(opacity=50) ;	/* Ie用 */
+	}
+	
+	/* リンクは黒 未定は#999 */
+	div.nolink{
+		color: #999;
+	}
+	</style>
+	
+	<div id="pageInfo">
+		<h1 class="workPage"><img src="img/works/enishi_works_title.png" alt="実績紹介" /></h1>    
+	</div><!-- //#pageInfo -->
+ 
+	<div id="contentsFrame">
+		<div id="contentsArea">
+			<div id="mainArea">
+				<article>
+				
+				<h2>
+					<img src="img/common/cmn_titlel_icon.png" />
+					<a href="works.html" style=" color:#ffffff;text-decoration:none;">実績一覧</a>　＞　民間管理
+				</h2>
+				<h1 style="font-size:24px;">民間管理</h1>
+				<div class="archiveArea">
+				<ul>
+				
+				<!--newitem-->
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_pri_manage39.html"><img width="222" height="155" src="img/work_pri_manage39/03.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>民間管理
+									</p>
+									<p class="archiveTitle"><a href="work_pri_manage39.html">R2年6月・プラウド船橋四街区</a></p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_pri_manage38.html"><img width="222" height="155" src="img/work_pri_manage38/01.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>民間管理
+									</p>
+									<p class="archiveTitle"><a href="work_pri_manage38.html">R2年6月・東京都現代美術館</a></p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_pri_manage37.html"><img width="222" height="155" src="img/work_pri_manage37/01.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>民間管理
+									</p>
+									<p class="archiveTitle"><a href="work_pri_manage37.html">R2年・東武スポーツクラブ プレオン船橋</a></p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_pri_manage36.html"><img width="222" height="155" src="img/work_pri_manage36/02.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>民間管理
+									</p>
+									<p class="archiveTitle"><a href="work_pri_manage36.html">R2年・船橋市南部清掃工場</a></p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_pri_manage34.html"><img width="222" height="155" src="img/work_pri_manage34/02.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>民間管理
+									</p>
+									<p class="archiveTitle"><a href="work_pri_manage34.html">R2年・西松建設（浦安）</a></p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_pri_manage33.html"><img width="222" height="155" src="img/work_pri_manage33/13.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>民間管理
+									</p>
+									<p class="archiveTitle"><a href="work_pri_manage33.html">R1年・レッドウッド佐倉</a></p>
+								</div>
+							</div>
+						</li>
+
+
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage32.html"><img width="222" height="155" src="img/work_pri_manage32/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage32.html">H30年・京橋エネシス</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage31.html"><img width="222" height="155" src="img/work_pri_manage31/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage31.html">H30年・愛宕神社</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage30.html"><img width="222" height="155" src="img/work_pri_manage30/4.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage30.html">H30年・ロイヤル東京食品工場</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage29.html"><img width="222" height="155" src="img/work_pri_manage29/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage29.html">H30年・パークアクシス菊川</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage28.html"><img width="222" height="155" src="img/work_pri_manage28/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage28.html">H30年・ソライエ船橋塚田</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage27.html"><img width="222" height="155" src="img/work_pri_manage27/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage27.html">H30年・アクロスモール新鎌ヶ谷</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage26.html"><img width="222" height="155" src="img/work69/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage26.html">H30年・南青山５丁目草刈</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage25.html"><img width="222" height="155" src="img/work65/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage25.html">H30年・代官山アドレス</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage24.html"><img width="222" height="155" src="img/work56/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage24.html">H30年・ライオンズフォーシア蔵前</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage22.html"><img width="222" height="155" src="img/work49/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage22.html">H30年・成田空港植栽管理</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work47.html"><a href="work_pri_manage21.html"><img width="222" height="155" src="img/work47/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage21.html">H29年・産総研植栽管理</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage20.html"><img width="222" height="155" src="img/work43/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage20.html">H29年・レッドウッド佐倉植栽管理</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage19.html"><img width="222" height="155" src="img/work41/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage19.html">H29年・ホテル市松手入れ</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage18.html"><img width="222" height="155" src="img/work40/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage18.html">H29年・プラウド船橋４街区植栽管理</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage17.html"><img width="222" height="155" src="img/work39/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage17.html">H29年・ビビット南船橋植栽管理</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage16.html"><img width="222" height="155" src="img/work38/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage16.html">H29年・パークアクシズ門前仲町植栽管理</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage15.html"><img width="222" height="155" src="img/work37/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage15.html">H29年・サンランド船橋植栽管理</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage14.html"><img width="222" height="155" src="img/work31/1.jpg" class="attachment-thumbnail wp-post-image" alt="exterior" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage14.html">H29年・ホテル市松 手入れ</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage13.html"><img width="222" height="155" src="img/work27/1.jpg" class="attachment-thumbnail wp-post-image" alt="exterior" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage13.html">H28年・大宮 第一興商ビル</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage12.html"><img width="222" height="155" src="img/work26/1.jpg" class="attachment-thumbnail wp-post-image" alt="exterior" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage12.html">H28年・相鉄フレッサイン東京蒲田</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage11.html"><img width="222" height="155" src="img/work23/1.jpg" class="attachment-thumbnail wp-post-image" alt="exterior" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" /></a>
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage11.html">H28年・カネカ水産</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage10.html"><img width="222" height="155" src="img/work20/1.jpg" class="attachment-thumbnail wp-post-image" alt="exterior" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage10.html">H28年・ストレリチア開花</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage09.html"><img width="222" height="155" src="img/work14/1.jpg" class="attachment-thumbnail wp-post-image" alt="exterior" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><a href="http://www.mot-art-museum.jp/" target="_blank">
+								<img src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" /></a>
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage09.html">H28年・東武スポーツクラブ プレオン船橋</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage08.html"><img width="222" height="155" src="img/works/enishi_works01.jpg" class="attachment-thumbnail wp-post-image" alt="exterior" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><a href="http://www.mot-art-museum.jp/" target="_blank">
+								<img src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" /></a>
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage08.html">東京都現代美術館</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage07.html"><img width="222" height="155" src="img/works/enishi_works02.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><a href="http://www.mot-art-museum.jp/" target="_blank">
+								<img src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" /></a>
+								</span>民間管理</p>
+							<p class="archiveTitle"><a href="work_pri_manage07.html">東京都現代美術館 緑地メンテナンス</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage06.html"><img width="222" height="155" src="img/works/enishi_works03.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><a href="http://toyosu.lalaport.jp/" target="_blank">
+								<img src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" /></a>
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage06.html">アーバンドッグららぽーと豊洲</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage05.html"><img width="222" height="155" src="img/works/enishi_works05.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span>
+								<img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage05.html">個人宅 和風庭園</a></p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><img width="222" height="155" src="img/works/2016_ex_photo001.png" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle">東京ビックサイト 壁面緑化</p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><a href="work_pri_manage03.html"><img width="222" height="155" src="img/works/2016_ex_photo004.png" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle"><a href="work_pri_manage03.html">H28年・明治学院大学 樹勢回復</a></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="left imagelinksmall">
+						<p><img width="222" height="155" src="img/works/2016_ex_photo005.png" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle">船橋市内幼稚園 樹木伐採工事</p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="left imagelinksmall">
+						<p><img width="222" height="155" src="img/works/2016_ex_photo007.png" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></p>
+					</div>
+					<div class="right">
+						<div>
+							<p class="archiveNote">
+								<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+								</span>民間管理
+							</p>
+							<p class="archiveTitle">個人宅 庭園整備</p>
+						</div>
+					</div>
+				</li>
+				
+				</ul>
+				</div>
+				
+				<!-- pager -->
+				<div class="pager">
+				<div class='wp-pagenavi'>
+				<!--<span class='pages'>1 / 12</span><span class='current'>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>...</span><span class='nextpostslink'>NEXT →</span>-->
+				</div></div>
+				<!-- /pager -->
+				
+				</article>
+			</div><!-- //#mainArea -->
+		</div><!-- /#contentsArea -->
+	</div><!-- /#contentsFrame -->
+
+<!----------------------------------------------------------->
+<!---------------------- フッターエリア --------------------------->
+<!----------------------------------------------------------->
+
+		<script type="text/javascript">
+			footer();
+		</script>
+	
+</div><!-- /#frame -->
+
+</body>
+</html>

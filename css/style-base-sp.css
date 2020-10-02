@@ -1,0 +1,425 @@
+@charset "utf-8";
+@media only screen and (max-width:640px){
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+iPhoneのボタンスタイルを無効化
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+input[type="submit"] {
+  -webkit-appearance: none;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+フレームデザイン
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#titleArea,
+#headerArea,
+#promoArea,
+#resultsArea,
+#pickupArea,
+#contentsArea,
+#fNaviArea,
+#footerArea,
+#copyArea {
+    width: auto;
+}
+#contentsFrame {
+    margin-bottom:25px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ヘッダー
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#titleArea h1 {
+	display:none;
+}
+#titleFrame{
+	background-color:#c0b4ac;
+}
+#headerArea {
+    margin-bottom:0;
+}
+#headerArea .left {
+    float:none;
+}
+#headerArea .logo {
+    width: 20%;
+}
+#headerArea .logoBox {
+    border-bottom: 1px solid #B9B9B9;
+}
+#headerArea .logo img {
+    max-width: 100%;
+}
+#headerArea .logo02 {
+    width: 71%;
+    margin: 19px 4% 0;
+}
+#headerArea .logo02 img {
+    width:100%;
+    height:auto;
+    margin:0;
+}
+#headerArea .contactBar {
+    display:none;
+}
+#titleArea nav ul {
+	margin-right:56px;
+}
+#titleArea nav li{
+	border-left:none;
+}
+#titleArea nav li a {
+	line-height: 56px;
+	height: 56px;
+	width:60px;
+	padding-top:0;
+}
+#pageInfo h2 span {
+	padding-left: 15px;
+}
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+グローバルナビ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+#gNaviArea{
+	display:none;
+}
+#acMenu{
+	display:block;
+}
+#acMenu dt{
+    display:block;
+    padding-top:4px;
+    font-size: 14px;
+    color:#333;
+    text-align:center;
+    padding: 14px 0;
+    background: #F0F0F0;
+    font-family: my_helvetica;
+    border-bottom: solid 1px #B9B9B9;
+}
+#acMenu dt.active{
+	border-bottom: 1px solid #B9B9B9;
+}
+#acMenu dd{
+    width:100%;
+    display:none;
+}
+#acMenu dd li{
+    position:relative;
+}
+#acMenu dd li:before {
+content: "\f054";
+font-family: FontAwesome;
+font-size: 10px;
+position: absolute;
+top: 15px;
+right: 10px;
+color: #22b9ad;
+}
+#acMenu dt i{
+    font-size: 21px;
+    margin-right:10px;
+    vertical-align: -2px;
+}
+#acMenu dd li a{
+    display:block;
+    padding: 15px;
+    border-bottom: 1px solid #B9B9B9;
+    font-size: 12px;
+    font-weight: bold;
+    background: #FFFFFF;
+}
+#acMenu dd li a strong{
+	font-size:16px;
+	padding-right:10px;
+	font-family: my_century;
+	color:#2c2c2c;
+}
+#acMenu dd li a:hover{
+	text-decoration:none;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+プロモ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#slider {
+    height:204px;
+}
+#slider1,
+#slider2,
+#slider3 {
+    width:100%!important;
+}
+#slider1 .wrapper,
+#slider2 .wrapper,
+#slider3 .wrapper {
+    height:167px;
+}
+#slider1 .wrapper {
+    background:url(promo01s.jpg) no-repeat 50% 50% #000;
+    background-size:100% auto!important;
+    position:relative;
+}
+#slider2 .wrapper {
+    background:url(promo02s.jpg) no-repeat 50% 50% #000;
+    background-size:100% auto!important;
+    position:relative;
+}
+#slider3 .wrapper {
+    background:url(promo03s.jpg) no-repeat 50% 50% #000;
+    background-size:100% auto!important;
+    position:relative;
+}
+
+#slider1 .wrapper .textBox,
+#slider2 .wrapper .textBox {
+    background:none;
+    position:absolute;
+    top:185px;
+    left:0;
+    padding:0;
+    width:100%;
+    margin-left:0;
+}
+#slider3 .wrapper .textBox {
+    background:none;
+    position:absolute;
+    top:200px;
+    left:0;
+    padding:0;
+    width:100%;
+    margin-left:0;
+}
+#slider1 .wrapper .textBox h3,
+#slider2 .wrapper .textBox h3,
+#slider3 .wrapper .textBox h3 {
+    text-align:center;
+}
+#slider1 .wrapper .textBox h3 img {
+    width:280px;
+    height:auto;
+    margin: 0 auto;
+}
+#slider2 .wrapper .textBox h3 img {
+    width:280px;
+    height:auto;
+    margin: 0 auto;
+}
+#slider3 .wrapper .textBox h3 img {
+    width:280px;
+    height:auto;
+    margin: 0 auto;
+}
+
+#slider1 .wrapper .textBox p,
+#slider2 .wrapper .textBox p,
+#slider3 .wrapper .textBox p {
+    display:none;
+}
+.home #promoArea ul {
+    display:none;
+}
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+プロモ　slider CSS 上書き
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.home #promoArea .bx-wrapper .bx-viewport {
+    height:295px!important;
+}
+.home #promoArea .bx-wrapper .bx-pager,
+.home #promoArea .bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: 15px;
+	width: 100%;
+}
+.home #promoArea .bx-wrapper .bx-pager,
+.home #promoArea .bx-wrapper .bx-controls-auto {
+    display: block;
+}
+
+.home #promoArea .bx-wrapper .bx-controls-direction a {
+    display:none;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ページインフォ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#pageInfo {
+    width:auto;
+    text-align: center;
+    margin: 38px auto 35px;
+}
+.reason #pageInfo {
+    margin:28px auto 25px;
+}
+.reason #pageInfo h1 {
+    background:url(images/feature_t_sp.jpg) no-repeat 50%;
+    background-size: 261px;
+    width: 261px;
+    height: 88px;
+    text-indent:-9999px;
+    margin:0 auto;
+} 
+.aboutus #pageInfo h1 img,
+.staff #pageInfo h1 img, 
+.greeting #pageInfo h1 img {
+    width:94px;
+    height:auto;
+}
+.consulting #pageInfo h1 img {
+    width:215px;
+    height:auto;
+} 
+.facility #pageInfo h1 img {
+    width:190px;
+    height:auto;
+}
+.restaurant #pageInfo h1 img {
+    width:190px;
+    height:auto;
+}
+.flow #pageInfo h1 img {
+    width:140px;
+    height:auto;
+}
+.consult_form #pageInfo h1 img {
+    width:143px;
+    height:auto;
+}
+.contact #pageInfo h1 img {
+    width:140px;
+    height:auto;
+}
+.recruit #pageInfo h1 img,
+.general #pageInfo h1 img,
+.independent #pageInfo h1 img {
+    width:95px;
+    height:auto;
+}
+#pageInfo .workPage {
+    width: 119px;
+    height: auto;
+    margin:0 auto;
+}
+#pageInfo .mediaPage {
+    width: 142px;
+    height: auto;
+    margin:0 auto;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+最近の実績
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.home #resultsFrame {
+    padding: 0;
+}
+.home #resultsArea {
+    overflow:visible;
+    height:auto;
+}
+.home #resultsArea .left {
+    width:100%;
+    height:auto;
+    background:#343434;
+    padding:28px 0;
+    text-align:left;
+    float:none;
+    overflow:hidden;
+}
+.home #resultsArea .wr01 img,
+.home #resultsArea .wr02 img {
+    margin-top:0;
+    float:left;
+}
+.home #resultsArea .wr01 img {
+    margin-left:15px;
+    margin-right:24px;
+}
+.home #resultsArea .wr02 img {
+    margin-top:3px;
+}
+.home #resultsArea .wr03 img {
+    margin-top:0;
+    margin-right: 25px;
+    float:right;
+}
+.home #resultsArea .right {
+    width:100%;
+    float:none;
+}
+.home #resultsArea .right .bx-wrapper {
+    margin:0;
+    padding:10px;
+}
+.home #resultsArea .right .slider1Nav{
+     display:none;
+}
+.home #resultsArea .bx-wrapper .bx-prev {
+    left: 10px !important;
+}
+.home #resultsArea .bx-wrapper .bx-next {
+    right: 10px !important;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+コンテンツ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+.home #promoArea{
+	height:auto;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+メインカラム
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+#mainArea {
+float: none;
+width: auto;
+font-size: 14px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+フッター
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#fNaviFrame {
+    display:none;
+}
+#footerArea {
+    padding:0 10px;
+}
+#footerArea .area01 {
+    float:none;
+    display:none;
+}
+#footerArea .area02, 
+#footerArea .area03 {
+    float:none;
+}
+#footerArea .area03 .access {
+    margin-right:10px;
+}
+#footerArea .area03 .ml {
+    padding: 14px 28px;
+}
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ページトップ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.pageTop {
+    margin-bottom:15px;
+}
+.pageTop a{
+    padding: 13px 0;
+    text-align:center;
+    position:inherit;
+    font-weight: bold;
+    background:#6b6b6b;
+    border-radius: 0;        /* CSS3草案 */  
+    -webkit-border-radius: 0;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 0;   /* Firefox用 */ 
+}
+.pageTop a i{
+    font-size:16px;
+}
+
+}/* media query end */

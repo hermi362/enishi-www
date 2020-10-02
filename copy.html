@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154862568-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154862568-1');
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="スタジオ縁,船橋,造園,植木,手入れ,消毒,害虫,伐採,庭造り,千葉">
+<meta name="description" content="お庭の手入れから、作庭までお気軽に問い合わせ下さい。(壁面緑化、屋上緑化、造園、舗装、店舗デザイン、コンサルティング、スタジオ縁、千葉)">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<meta name="format-detection" content="telephone=no" />
+
+<!-- ファビコン -->
+<link rel="icon" href="img/common/cmn_favicon.png" type="image/png"/>
+
+<title>株式会社スタジオ縁￤船橋市から全国へ多様な緑化を提案します</title>
+
+<!-- StyleSheet -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css"><!-- web font -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css"><!-- slider -->
+
+<!-- JavaScript -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script><!-- slider -->
+<script type="text/javascript" src="js/jquery.ripples.js"></script><!-- 波紋エフェクト -->
+
+<script type="text/javascript" src="js/header.js"></script><!-- ヘッダ書き込み用 -->
+<script type="text/javascript" src="js/footer.js"></script><!-- フッタ書き込み用 -->
+
+<script>
+
+/* 波紋のエフェクト 読み込みが終わってから処理を行う  */
+/*$(window).load(function () {
+	$('#frame').ripples({
+	    resolution: 512,
+	    dropRadius: 20,
+	    perturbance: 0.04,
+	});
+});*/
+
+$(function(){
+	// MainSlider
+  $('#sliderPromo').bxSlider({
+    controls: true,
+    speed: 800,
+    pause: 7000,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: true,
+    slideMargin: 0,
+    minSlides: 1,
+    maxSlides: 1,
+    moveSlides: 1
+  });
+
+	// SubSlider
+  $('.slider_result').bxSlider({
+    controls: true,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: false,
+    slideWidth: 251,/*228*/
+    minSlides: 2,
+    maxSlides: 4,
+    slideMargin: 1,/*20*/
+    moveSlides: 1
+  });
+  
+  // 実績の紹介 個別ページ Slider
+  $('.gallery-list').bxSlider({
+    auto: true,
+    pause: 5000,
+    speed: 600,
+    mode: 'horizontal',  
+    infiniteLoop: false,
+    prevText: '<',  
+    nextText: '>',
+    slideWidth: 640,
+    pager: true,  
+    //easing: 'easeOutBounce',  
+    pagerCustom: '.gallery-pager'     
+  });
+
+	// gnavi
+	$('ul.gNavi li a').each(function(){
+		if($(this).attr('href') == location.href){
+			$(this).find('img').fadeTo(0,0);
+		}else{
+			$(this).hover(function(){
+		  	$(this).find('img').stop().fadeTo(200,0);
+	 		},function(){
+	  		if($(this).attr('href') != location.href){
+	 				$(this).find('img').stop().fadeTo(200,1);
+	    	}
+	  	});
+	  }
+	});
+	
+	// アコーディオンメニュー
+	$("#acMenu dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$(".acItem dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$("#menu").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav").slideToggle();
+	});
+	$("#menu2").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav2").slideToggle();
+	});
+	$("#menu3").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav3").slideToggle();
+	});
+	$("#menu4").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav4").slideToggle();
+	});
+
+	// to-top-btn
+	$(function () {
+		$(".pageTop").hide();
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.pageTop').fadeIn();
+			} else {
+				$('.pageTop').fadeOut();
+			}
+		});
+		$('.pageTop a').click(function () {
+			$('body,html').animate({scrollTop: 0}, 500);
+			return false;
+		});
+	});
+});
+
+</script>
+</head>
+<body>
+	<div id="frame">
+<!----------------------------------------------------------->
+<!---------------------- ヘッダーエリア -------------------------->
+<!----------------------------------------------------------->
+
+		<script type="text/javascript">
+			header();
+		</script>
+
+<!----------------------------------------------------------->
+<!---------------------- メインコンテンツ ------------------------->
+<!----------------------------------------------------------->
+
+<style>
+#contentsFrame {
+	margin-bottom: 0;
+}
+
+/* iframeの下隙間をなくす */
+iframe {
+    vertical-align: bottom;
+}
+
+#consult_form h2 img {
+	width: 20px;
+	margin-right: 10px;
+}
+
+/* pp、著作権のメインテキストタイトル画像サイズ */
+.main_text .left img {
+	width: 583px;
+	height: 46px;
+}
+
+/* テーブルでリスト風に表現 */
+.text_head {
+	vertical-align: top;
+}
+.left p {
+	margin-bottom: 10px;
+}
+</style>
+			
+
+	<div id="pageInfo">
+		<h1 class="contact"><img src="img/copy/enishi_copyright_title.png" alt="著作権について" /></h1>
+	</div><!-- //#pageInfo -->
+	 
+	<div id="contentsFrame">
+		<div id="contentsArea">
+			<div id="mainArea">
+				<article>
+				
+					<div class="static" id="consult_form">
+						<h2><img src="img/common/cmn_titlel_icon.png" />著作権について</h2>
+						<div class="consultArea main_text">
+							<ul>
+								<li class="top_list">
+									<div class="left">
+										<h3><img src="img/copy/enishi_copyright_01.png" alt="著作権について" class="alignnone size-full wp-image-400" /></h3>
+										<p>株式会社スタジオ縁（以下、弊社と表記）に掲載している文章・写真・図面・動画などの著作物は、日本の著作権法及びベルヌ条約などの国際条約により、著作権の保護を受けています。</p>
+										<p>弊社の各種ページアナウンスをその利用規約（プライバシーポリシー及び免責事項）等で定める範囲内でご利用頂く場合や、著作権者の許諾なく著作物を利用する事が法的に認められる場合を除き、無断で複製、公衆送信、翻案、配布等の利用をする事は出来ません。また、利用が認められる場合でも、著作者の意に反した変更、削除は出来ません。掲載内容を要約して利用する事も、原則として著作権者の許諾が必要です。</p>
+									</div>
+									<div class="right">
+										<p><img src="img/copy/enishi_copyright_img01.png" alt="consul_photo01" width="222" height="155" class="alignnone size-full wp-image-401" /></p>
+									</div>
+								</li>
+								
+								<li>
+									<div class="left">
+										<h3><img src="img/copy/enishi_copyright_02.png" alt="掲載内容や写真を転載・利用する場合" class="alignnone size-full wp-image-406" /></h3>
+										<p>弊社の著作物（当ウェブサイトや関連ウェブ媒体、雑誌、書籍等の出版物に掲載された記事・写真・図面・動画など）の転載・利用をご希望の方は、お問い合わせフォームからご連絡下さい。許諾させて頂く場合でも、許諾範囲の双方合意及び締結書の取り交わしをお願いさせて頂いております。</p>
+									</div>
+									<div class="right">
+										<p><img src="img/copy/enishi_copyright_img02.png" alt="consul_photo02" width="222" height="155" class="alignnone size-full wp-image-407" /></p>
+									</div>
+								</li>
+								
+								<li>
+									<div class="left">
+										<h3><img src="img/copy/enishi_copyright_03.png" alt="著作権の制限" class="alignnone size-full wp-image-409" /></h3>
+										<p>著作権法上、著作権者の許諾なしに著作物を利用出来る代表的なケースとして以下の様なものがあります。</p>
+										<br>
+										<p>私的使用の為の複製</p>
+										<p>私的使用は、著作権法で「個人的に、または家庭内その他これに準ずる限られた範囲内で使用する事」と定義されています。私的使用を目的とする複製は、使用する人が自ら行う必要があります。掲載内容、写真などのデータをダウンロードしたり、蓄積したりする事も、法的には「複製」に当たります。営利を目的としない場合でも、上に挙げた範囲を超えてダウンロードしたり蓄積したりすれば、私的使用とは言えません。</p>
+										<p>また、ウェブサイトやブログなどに掲載内容や写真を載せる事は、個人が行う場合であっても私的使用には成りません。大勢の人がアクセスでき、「家庭内その他これに準じる限られた範囲」で使うとは言えないからです。</p>
+										<br>
+										<p>引用</p>
+										<p>一般に、他人の作品の一部を利用する事を「引用」といいますが、著作権法では、引用を次のように規定し、枠をはめています。</p>
+										<p>公表された著作物は、引用して利用することができる。この場合において、その引用は、公正な慣行に合致するものであり、かつ、報道、批評、研究その他の引用の目的上正当な範囲内で行われるものでなければならない」</p>
+										<p>適法な引用という為には次の条件を満たす必要がある、とされています。</p>
+										<p>質的にも量的にも、引用する側の本文が「主」、引用部分が「従」という関係にあること。本文に表現したい内容がしっかりとあって、その中に、説明や補強材料として必要な他の著作物を引いてくる、というものが引用です。本文の内容が主体であり、引用された部分はそれと関連性があるものの付随的であるという、質的な意味での主従関係がなければ成りません。量的にも、引用部分の方が本文より短い事が必要です。「株式会社スタジオ縁のウェブサイトに次のような掲載内容があった」と書いて、あとはその記事を丸写しにしたものや、記事に極短いコメントを付けただけのものは引用とはいえません。</p>
+										<p>引用部分がはっきり区分されている事。引用部分をカギかっこでくくるなど、本文と引用部分が明らかに区別できる事が必要です。</p>
+										<p>更に、「出所の明示」も必要です。通常は引用部分の著作者名と著作物名を挙げておかなければなりません。</p>
+										<br>
+										<p>以上が、弊社が規定する著作権の公開提示とします。</p>
+									
+									</div>
+									<div class="right">
+										<p><img src="img/copy/enishi_copyright_img03.png" alt="consul_photo03" width="222" height="155" class="alignnone size-full wp-image-410" /></p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+			</div><!-- //#mainArea -->
+		</div><!-- /#contentsArea -->
+	</div><!-- /#contentsFrame -->
+
+<!----------------------------------------------------------->
+<!---------------------- フッターエリア --------------------------->
+<!----------------------------------------------------------->
+
+		<script type="text/javascript">
+			footer();
+		</script>
+	
+</div><!-- /#frame -->
+
+</body>
+</html>

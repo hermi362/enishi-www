@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154862568-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154862568-1');
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="スタジオ縁,船橋,造園,植木,手入れ,消毒,害虫,伐採,庭造り,千葉">
+<meta name="description" content="お庭の手入れから、作庭までお気軽に問い合わせ下さい。(壁面緑化、屋上緑化、造園、舗装、店舗デザイン、コンサルティング、スタジオ縁、千葉)">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<meta name="format-detection" content="telephone=no" />
+
+<!-- ファビコン -->
+<link rel="icon" href="img/common/cmn_favicon.png" type="image/png"/>
+
+<title>株式会社スタジオ縁￤船橋市から全国へ多様な緑化を提案します</title>
+
+<!-- StyleSheet -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css"><!-- web font -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/table-design.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css"><!-- slider -->
+
+<!-- JavaScript -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script><!-- slider -->
+<script type="text/javascript" src="js/jquery.ripples.js"></script><!-- 波紋エフェクト -->
+
+<script type="text/javascript" src="js/header.js"></script><!-- ヘッダ書き込み用 -->
+<script type="text/javascript" src="js/footer.js"></script><!-- フッタ書き込み用 -->
+
+<script>
+
+/* 波紋のエフェクト 読み込みが終わってから処理を行う  */
+/*$(window).load(function () {
+	$('#frame').ripples({
+	    resolution: 512,
+	    dropRadius: 20,
+	    perturbance: 0.04,
+	});
+});*/
+
+$(function(){
+	// MainSlider
+  $('#sliderPromo').bxSlider({
+    controls: true,
+    speed: 800,
+    pause: 7000,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: true,
+    slideMargin: 0,
+    minSlides: 1,
+    maxSlides: 1,
+    moveSlides: 1
+  });
+
+	// SubSlider
+  $('.slider_result').bxSlider({
+    controls: true,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: false,
+    slideWidth: 251,/*228*/
+    minSlides: 2,
+    maxSlides: 4,
+    slideMargin: 1,/*20*/
+    moveSlides: 1
+  });
+  
+  // 実績の紹介 個別ページ Slider
+  $('.gallery-list').bxSlider({
+    auto: true,
+    pause: 5000,
+    speed: 600,
+    mode: 'horizontal',  
+    infiniteLoop: false,
+    prevText: '<',  
+    nextText: '>',
+    slideWidth: 640,
+    pager: true,  
+    //easing: 'easeOutBounce',  
+    pagerCustom: '.gallery-pager'     
+  });
+
+	// gnavi
+	$('ul.gNavi li a').each(function(){
+		if($(this).attr('href') == location.href){
+			$(this).find('img').fadeTo(0,0);
+		}else{
+			$(this).hover(function(){
+		  	$(this).find('img').stop().fadeTo(200,0);
+	 		},function(){
+	  		if($(this).attr('href') != location.href){
+	 				$(this).find('img').stop().fadeTo(200,1);
+	    	}
+	  	});
+	  }
+	});
+	
+	// アコーディオンメニュー
+	$("#acMenu dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$(".acItem dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$("#menu").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav").slideToggle();
+	});
+	$("#menu2").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav2").slideToggle();
+	});
+	$("#menu3").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav3").slideToggle();
+	});
+	$("#menu4").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav4").slideToggle();
+	});
+
+	// to-top-btn
+	$(function () {
+		$(".pageTop").hide();
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.pageTop').fadeIn();
+			} else {
+				$('.pageTop').fadeOut();
+			}
+		});
+		$('.pageTop a').click(function () {
+			$('body,html').animate({scrollTop: 0}, 500);
+			return false;
+		});
+	});
+});
+
+</script>
+</head>
+
+<body>
+	<div id="frame">
+<!----------------------------------------------------------->
+<!---------------------- ヘッダーエリア -------------------------->
+<!----------------------------------------------------------->
+
+		<script type="text/javascript">
+			header();
+		</script>
+
+<!----------------------------------------------------------->
+<!---------------------- メインコンテンツ ------------------------->
+<!----------------------------------------------------------->
+
+<style>
+#contentsFrame {
+	margin-bottom: 0;
+}
+
+/* iframeの下隙間をなくす */
+iframe {
+    vertical-align: bottom;
+}
+#consult_form h2 img {
+	width: 20px;
+	margin-right: 10px;
+}
+/* pp系のメインテキストタイトル画像サイズ */
+.main_text .left img {
+	width: 583px;
+	height: 46px;
+}
+
+/* テキストの設定 */
+.text_head {
+	vertical-align: top;
+}
+.left p {
+	margin-bottom: 10px;
+}
+h3 {
+	font-size: 22px;
+}
+</style>
+
+<div id="pageInfo">
+	<h1 class="contact"><img src="img/employment/enishi_employment_title.png" alt="採用情報" /></h1>
+</div><!-- //#pageInfo -->
+ 
+	<div id="contentsFrame">
+		<div id="contentsArea">
+			<div id="mainArea">
+				<article>
+					<div class="static" id="consult_form">
+						<h2><img src="img/common/cmn_titlel_icon.png" />採用情報</h2>
+						<div class="consultArea main_text">
+							<div class="table">
+
+								<table class="infotable">
+									<tr><th class="item">募集職種</th><td class="detail"><b>マンション、公園等の植栽管理、他。</b><br>試用期間あり</td></tr>
+									<tr><th class="item">仕事内容</th><td class="detail">マンション、公園、ショッピングセンター、その他の<br>植栽管理を　主とした作業をします。<br>（剪定、刈込、除草、病虫害防除、清掃、その他）</td></tr>
+									<tr><th class="item">応募資格・条件</th><td class="detail">既卒・第二新卒歓迎<br>シニア歓迎<br>高専卒以上 / 未経験OK<br>経験者　歓迎</td></tr>
+									<tr><th class="item">募集人数・募集背景</th><td class="detail">増員<br>７名前後　募集しています。<br>女性も活躍中。（現在２名就業中）</td></tr>
+									<tr><th class="item">勤務地</th><td class="detail">駅から徒歩5分以内<br>転勤なし<br>株式会社スタジオ縁<br>千葉県船橋市浜町１－６ファミリータウン５－１１２<br>（最寄駅：京成本線　大神宮下）</td></tr>
+									<tr><th class="item">アクセス</th><td class="detail">駅近<br>ららぽーとTOKYO-BAY付近</td></tr>
+									<tr><th class="item">勤務時間</th><td class="detail">残業なし<br>8:00 ～ 17:00<br>年間105日の　休日を設けています。</td></tr>
+									<tr><th class="item">給与</th><td class="detail">月給　250,000円　～　400,000円　（※想定年収　3,000,000円　～　4,800,000円）<br>経験、能力、有資格により　決定いたします。</td></tr>
+									<tr><th class="item">年収例</th><td class="detail">3,000,000円 / 入社1年目・未経験者<br>3,600,000円 / 入社1年目・経験者<br>4,800,000円 / 入社1年目・有資格者（確認）</td></tr>
+									<tr><th class="item">休日休暇</th><td class="detail">夏季休暇<br>年末年始休暇<br>年間105日の　休日を設けています。<br>6日/月（隔週　土、日）</td></tr>
+									<tr><th class="item">福利厚生</th><td class="detail">◇ 雇用保険<br>◇ 厚生年金<br>◇ 労災保険<br>◇ 健康保険<br>◇ 交通費支給あり<br>◇ 服装自由<br>◇ 資格取得支援・手当てあり</td></tr>
+								</table> 
+								<p><br></p>
+
+								<table class="infotable">
+									<tr><th class="item">募集職種</th><td class="detail"><b>軽作業員（手元、補助員）</b><br>正社員登用あり</td></tr>
+									<tr><th class="item">仕事内容</th><td class="detail">植栽管理の補助作業ほか<br>公園清掃ほか</td></tr>
+									<tr><th class="item">応募資格・条件</th><td class="detail">高校生歓迎<br>シニア歓迎<br>未経験OK<br>学歴不問</td></tr>
+									<tr><th class="item">募集人数・募集背景</th><td class="detail">増員<br>3人前後</td></tr>
+									<tr><th class="item">勤務地</th><td class="detail">駅から徒歩5分以内<br>株式会社スタジオ縁<br>千葉県船橋市浜町１－６ファミリータウン５－１１２<br>（最寄駅：京成本線　大神宮下）</td></tr>
+									<tr><th class="item">勤務時間</th><td class="detail">残業なし<br>週2～3日からOK<br>シフト制<br>8:00 ～ 17:00（8H）</td></tr>
+									<tr><th class="item">給与</th><td class="detail">時給　1,100円　～　1,800円</td></tr>
+									<tr><th class="item">休日休暇</th><td class="detail">◇夏季休暇<br>◇年末年始休暇<br>シフト制なので、休日は打ち合わせの上、決定可。<br>◇年間休日120日以上</td></tr>
+									<tr><th class="item">福利厚生</th><td class="detail">◇労災保険<br>◇交通費支給あり<br>◇服装自由<br>◇雇用保険<br>◇厚生年金<br>◇健康保険</td></tr>
+								</table> 
+								<p><br></p>
+
+								<table class="infotable">
+									<tr><th class="item">募集職種</th><td class="detail"><b>土木・舗装の施工管理スタッフ【経験者優遇・年間休日105日】</b></td></tr>
+									<tr><th class="item">仕事内容</th><td class="detail">
+										<ul>
+										<li>施工管理の内容は、現場管理+工程管理+安全管理+労務管理+原価管理、その他。</li>
+										<li>官公庁、民間の工事　上記施工管理ほか。</li>
+										<li>まだ、若い会社ですので　一緒に　盛り上げていただける方を　募集いたします。</li>
+										<li>他社より、休日多し。</li>
+										</ul></td></tr>
+									<tr><th class="item">応募資格・条件</th><td class="detail">シニア歓迎<br>経験者のみ募集<br>１，２級土木施工管理技士　有資格者</td></tr>
+									<tr><th class="item">募集人数・募集背景</th><td class="detail">増員<br>２名～<br>事業拡大にて、増員。</td></tr>
+									<tr><th class="item">勤務地</th><td class="detail">転勤なし<br>千葉県船橋市浜町１－６ファミリータウン５－１１２（最寄駅：京成本線大神宮下）</td></tr>
+									<tr><th class="item">アクセス</th><td class="detail">大神宮下駅より徒歩7分</td></tr>
+									<tr><th class="item">勤務時間</th><td class="detail">8:00 ～ 17:00<br>・実働8時間<br>・休憩1時間<br>・残業時間なし　（工事受注量により、発生する場合があります。）</td></tr>
+									<tr><th class="item">給与</th><td class="detail">月給　250,000円　～　600,000円　（※想定年収　3,000,000円　～　7,200,000円）<br>・資格及びスキルによる。<br>・残業時間が発生した場合、別途　全額支給します。<br>・交通費支給</td></tr>
+									<tr><th class="item">休日休暇</th><td class="detail">・隔週休　２日制<br>（隔週土曜日＋日曜、祝日＋会社休日＝105日/年）<br>・有給あり</td></tr>
+									<tr><th class="item">福利厚生</th><td class="detail">併設カフェにて割引ランチ<br>社員旅行ほか<br>◇ 雇用保険<br>◇ 厚生年金<br>◇ 労災保険<br>◇ 健康保険<br>・　建設業退職金制度加入<br>・　特定退職金共済制度加入<br>・　携帯電話支給</td></tr>
+								</table> 
+								<p><br></p>
+
+								<table class="infotable">
+									<tr><th class="item">募集職種</th><td class="detail"><b>（現場作業員）土木・舗装・外構</b><br>正社員登用あり<br>急募！内定まで2週間</td></tr>
+									<tr><th class="item">仕事内容</th><td class="detail">土木工事、舗装工事、解体工事、外構工事<br>その他。</td></tr>
+									<tr><th class="item">応募資格・条件</th><td class="detail">シニア歓迎<br>学歴不問<br>経験者のみ募集</td></tr>
+									<tr><th class="item">募集人数・募集背景</th><td class="detail">増員</td></tr>
+									<tr><th class="item">勤務地</th><td class="detail">駅から徒歩5分以内<br>千葉県船橋市浜町１－６ファミリータウン５－１１２（最寄駅：大神宮下）</td></tr>
+									<tr><th class="item">勤務時間</th><td class="detail">残業なし<br>8:00 ～ 17:00<br>８時間労働　休憩１時間</td></tr>
+									<tr><th class="item">給与</th><td class="detail">月給　250,000円　～　400,000円　（※想定年収　3,000,000円　～　4,800,000円）<br>経験、能力にて決定いたします。</td></tr>
+									<tr><th class="item">休日休暇</th><td class="detail">隔週土日　休み<br>105日/年間休日　設定。</td></tr>
+									<tr><th class="item">福利厚生</th><td class="detail">◇ 雇用保険<br>◇ 厚生年金<br>◇ 労災保険<br>◇ 健康保険<br>◇ 交通費支給あり<br>◇ 服装自由</td></tr>
+								</table> 
+								<p><br></p>
+
+								<table class="infotable">
+									<tr><th class="item">募集職種</th><td class="detail"><b>一般事務</b><br>試用期間あり<br>正社員登用あり<br>急募！内定まで2週間</td></tr>
+									<tr><th class="item">仕事内容</th><td class="detail">・建設業の　書類作成補助。<br>・雑務補助。<br>・Caféのホール補助。<br>・yoga教室の受付補助。<br>・その他、イベント補助。</td></tr>
+									<tr><th class="item">応募資格・条件</th><td class="detail">未経験OK<br>学歴不問</td></tr>
+									<tr><th class="item">募集人数・募集背景</th><td class="detail">２名程度。</td></tr>
+									<tr><th class="item">勤務地</th><td class="detail">駅から徒歩5分以内<br>株式会社スタジオ縁<br>千葉県船橋市浜町１－６ファミリータウン５－１１２（最寄駅：京成　大神宮下）<br>ららぽーとTOKYO-BAY　近所。（北側の浜町商店街）</td></tr>
+									<tr><th class="item">勤務時間</th><td class="detail">残業なし<br>完全土日祝休み<br>1日4h以内OK<br>9:00 ～ 17:00<br>・就業日数、就業時間は　相談できます。<br>・小さなお子様が、いらっしゃる方でも、調整就業可。<br>・面接時に、要相談。</td></tr>
+									<tr><th class="item">給与</th><td class="detail">時給　1,100円　～　1,800円<br>経験・能力を考慮して、時給を決定します。</td></tr>
+									<tr><th class="item">休日休暇</th><td class="detail">◇年末年始休暇<br>◇ 夏季休暇<br>・休日については、面接時に希望を提示してください。</td></tr>
+									<tr><th class="item">福利厚生</th><td class="detail">◇ 服装自由<br>◇ 交通費支給あり<br>◇ 雇用保険<br>◇ 厚生年金<br>◇ 健康保険<br>◇ 労災保険</td></tr>
+								</table> 
+								<p><br></p>
+
+								<table class="infotable">
+									<tr><th class="item">募集職種</th><td class="detail"><b>キッチンスタッフ、調理師、シェフ、パティシエ</b><br>試用期間あり<br>正社員登用あり</td></tr>
+									<tr><th class="item">仕事内容</th><td class="detail">Caféの運営、調理そのた、全般。</td></tr>
+									<tr><th class="item">応募資格・条件</th><td class="detail">シニア歓迎<br>経験者のみ募集</td></tr>
+									<tr><th class="item">募集人数・募集背景</th><td class="detail">増員</td></tr>
+									<tr><th class="item">勤務地</th><td class="detail">駅から徒歩5分以内<br>Caféキミドリ<br>千葉県船橋市浜町１－６ファミリータウン５－１１２<br>（最寄駅：京成本線　大神宮下）</td></tr>
+									<tr><th class="item">勤務時間</th><td class="detail">残業なし<br>週2～3日からOK<br>シフト制<br>飲食業にて、要打ち合わせ。</td></tr>
+									<tr><th class="item">給与</th><td class="detail">時給　1,100円　～　1,800円<br>経験・能力により判断致します。</td></tr>
+									<tr><th class="item">休日休暇</th><td class="detail">年間休日120日以上<br>年末年始休暇</td></tr>
+									<tr><th class="item">福利厚生</th><td class="detail">◇ 雇用保険<br>◇ 厚生年金<br>◇ 労災保険<br>◇ 健康保険<br>◇ 交通費支給あり<br>◇ 服装自由</td></tr>
+								</table> 
+								<p><br></p>
+								
+								
+							</div>
+						</div>
+					</div>
+				</article>
+			</div><!-- //#mainArea -->
+		</div><!-- /#contentsArea -->
+	</div><!-- /#contentsFrame -->
+
+<!----------------------------------------------------------->
+<!---------------------- フッターエリア --------------------------->
+<!----------------------------------------------------------->
+
+		<script type="text/javascript">
+			footer();
+		</script>
+	
+</div><!-- /#frame -->
+
+</body>
+</html>

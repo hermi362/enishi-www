@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154862568-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154862568-1');
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="スタジオ縁,船橋,造園,植木,手入れ,消毒,害虫,伐採,庭造り,千葉">
+<meta name="description" content="お庭の手入れから、作庭までお気軽に問い合わせ下さい。(壁面緑化、屋上緑化、造園、舗装、店舗デザイン、コンサルティング、スタジオ縁、千葉)">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<meta name="format-detection" content="telephone=no" />
+
+<!-- ファビコン -->
+<link rel="icon" href="img/common/cmn_favicon.png" type="image/png"/>
+
+<title>株式会社スタジオ縁￤船橋市から全国へ多様な緑化を提案します</title>
+
+<!-- StyleSheet -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css"><!-- web font -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css"><!-- slider -->
+
+<!-- JavaScript -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script><!-- slider -->
+<script type="text/javascript" src="js/jquery.ripples.js"></script><!-- 波紋エフェクト -->
+
+<script type="text/javascript" src="js/header.js"></script><!-- ヘッダ書き込み用 -->
+<script type="text/javascript" src="js/footer.js"></script><!-- フッタ書き込み用 -->
+
+<script>
+
+/* 波紋のエフェクト 読み込みが終わってから処理を行う  */
+/*$(window).load(function () {
+	$('#frame').ripples({
+	    resolution: 512,
+	    dropRadius: 20,
+	    perturbance: 0.04,
+	});
+});*/
+
+$(function(){
+	// MainSlider
+  $('#sliderPromo').bxSlider({
+    controls: true,
+    speed: 800,
+    pause: 7000,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: true,
+    slideMargin: 0,
+    minSlides: 1,
+    maxSlides: 1,
+    moveSlides: 1
+  });
+
+	// SubSlider
+  $('.slider_result').bxSlider({
+    controls: true,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: false,
+    slideWidth: 251,/*228*/
+    minSlides: 2,
+    maxSlides: 4,
+    slideMargin: 1,/*20*/
+    moveSlides: 1
+  });
+  
+  // 実績の紹介 個別ページ Slider
+  $('.gallery-list').bxSlider({
+    auto: true,
+    pause: 5000,
+    speed: 600,
+    mode: 'horizontal',  
+    infiniteLoop: false,
+    prevText: '<',  
+    nextText: '>',
+    slideWidth: 640,
+    pager: true,  
+    //easing: 'easeOutBounce',  
+    pagerCustom: '.gallery-pager'     
+  });
+
+	// gnavi
+	$('ul.gNavi li a').each(function(){
+		if($(this).attr('href') == location.href){
+			$(this).find('img').fadeTo(0,0);
+		}else{
+			$(this).hover(function(){
+		  	$(this).find('img').stop().fadeTo(200,0);
+	 		},function(){
+	  		if($(this).attr('href') != location.href){
+	 				$(this).find('img').stop().fadeTo(200,1);
+	    	}
+	  	});
+	  }
+	});
+	
+	// アコーディオンメニュー
+	$("#acMenu dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$(".acItem dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$("#menu").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav").slideToggle();
+	});
+	$("#menu2").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav2").slideToggle();
+	});
+	$("#menu3").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav3").slideToggle();
+	});
+	$("#menu4").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav4").slideToggle();
+	});
+
+	// to-top-btn
+	$(function () {
+		$(".pageTop").hide();
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.pageTop').fadeIn();
+			} else {
+				$('.pageTop').fadeOut();
+			}
+		});
+		$('.pageTop a').click(function () {
+			$('body,html').animate({scrollTop: 0}, 500);
+			return false;
+		});
+	});
+});
+
+</script>
+</head>
+<body>
+
+<!----------------------------------------------------------->
+<!---------------------- ヘッダーエリア -------------------------->
+<!----------------------------------------------------------->
+
+<div id="frame">
+	<script type="text/javascript">
+		header();
+	</script>
+
+<!----------------------------------------------------------->
+<!---------------------- メインコンテンツ ------------------------->
+<!----------------------------------------------------------->
+
+	<style>
+	h2 img {
+		width: 20px;
+		margin-right: 10px;
+	}
+	.resultHead .right img {
+		width: 30px;
+		height: 30px;
+	}
+
+	#img10 .left , #img10 .right {
+		margin-bottom: 35px;
+	}
+	#img10 .left {
+		margin-right: 12px;
+	}
+	#text06 {
+		margin-bottom: 25px;
+	}
+	#img_txt05 {
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+	#img12 {
+		margin-bottom: 30px;
+	}
+	div.border {
+		border-top:1px solid #4a5f53;
+	}
+	
+	.img01 {
+		margin-bottom: 24px;
+	}
+	#img_txt02 {
+		margin-bottom: 15px;
+	}
+	
+	.img02_top {
+		margin-bottom: 12px;
+	}
+	.img02_top .left {
+		margin-right: 12px;
+		margin-bottom: 12px;
+	}
+	.img04_btm .left {
+		margin-right: 12px;
+	}
+	.img04_btm .right ,.img04_btm .left {
+		margin-bottom: 35px;
+	}
+	
+	.img06 .left {
+		margin-right: 12px;
+	}
+	.img06 .right ,.img06 .left {
+		margin-bottom: 35px;
+	}
+	
+	</style>
+
+	<div id="pageInfo">
+		<h1><img src="img/green/enishi_green_title.png" alt="グリーンデザイン" /></h1>
+	</div>
+	<!-- //#pageInfo -->
+
+	<div id="contentsFrame">
+		<div id="contentsArea">
+			<div id="mainArea">
+				<article>
+			
+					<h2><img src="img/common/cmn_titlel_icon.png" />グリーンデザイン</h2>
+				
+					<div class="static" id="reason">
+
+						<p class="img01"><img src="img/green/enishi_green_img01.png" alt="スタジオ縁 造園 壁面緑化 屋内" /></p>
+						<p id="img_txt01"><img src="img/green/enishi_green_txt01.png" alt="スタジオ縁 造園 緑化提案" /></p>
+						<br>
+						<p>現在多様性を模索し続けている「緑化」の世界、それは店舗や事務所、大きなステージや野外においても沢山の需要が見込まれている新しい”人と自然の共存”空間。</p>
+						<br>
+						<p>今迄もガーデニングや行政援助による企業の屋上緑化事業などメディアの話題に上る「緑化」は在りました。私達スタジオ縁が推進し、提案するのはその中でも新しい緑化事業「壁面緑化」です。壁面緑化って何？と思われる方、実は意外と目にしているかもしれません、これは全てグリーンデザインの一環であり、壁面緑化の一例でも在ります。</p>
+						<br><br>
+					
+						<p class="img04_btm">
+							<span class="left"><img src="img/green/enishi_green_img02.png" alt="スタジオ縁 造園 壁面緑化 屋内" /></span>
+							<span class="right"><img src="img/green/enishi_green_img03.png" alt="スタジオ縁 造園 壁面緑化 屋外" /></span>
+						</p>
+					
+						<br>
+						<br>
+						<p>野外やエントランス部分が大部分を占めると思われがちな壁面緑化、海外では２０００年頃を境に実に多くの企業が屋内に取り入れています。国内でも外資系を中心に今迄の様なアクセントとしての緑化では無く、存在感の大きな壁面緑化の魅力を生かしたオフィスデザインが台頭し始めています。</p>
+						<br>
+						<br>
+					
+						<p class="img06">
+							<span class="left"><img src="img/green/enishi_green_img04.png" alt="スタジオ縁 造園 壁面緑化 オフィス" /></span>
+							<span class="right"><img src="img/green/enishi_green_img05.png" alt="スタジオ縁 造園 壁面緑化 個人" /></span>
+						</p>
+						
+						<br><br>
+						<div id="text03">
+							<p>この壁面緑化の流れは企業から個人事務所などへその思想が流入し、最近では一般家庭のプライベート空間にも希望されるお客様がいらっしゃいます。企業ベースの様な大規模な施工でなくてもリビングなどのフラットな壁がアイディア次第では一番のリラックスエリアへと様変わりする可能性も在るのです。</p>
+							<br>
+							<p>注目されつつある「壁面緑化」、更に詳しくしってみたいとは思いませんか？少しでもご興味が湧いた方はお気軽にスタジオ縁「<a href="contact.html"><b>問い合わせフォーム</b></a>」からご連絡下さい。</p><br>
+						</div>
+					
+						<br>
+						<div class="border"></div>
+						<br><br><br>
+						
+						<img src="img/green/enishi_green_txt02.png" alt="スタジオ縁 造園 壁面緑化" />
+						
+						<br><br>
+						<p>壁面緑化の素晴らしさは実際に目で見る事で更に印象深く、そしてその効果を知る事が出来ます。しかしそんな緑化への一歩を踏み留まる要因、それは導入プロセスの先入観かもしれません。</p>
+						<br>
+						<p>野外においての壁面緑化は季節や気候に左右こそされ、その構成は基本的に一般的な造園フローと変わりません。しかし屋内における壁面緑化はシステム化されたパッケージ単位で構成構築していきます。</p>
+						<br>
+						<p>意外と思われるかもしれませんがその導入は驚くほどスムーズ、そしてメンテナンスは難しく在りません。幾つかのパッケージが在りますが既存の構築方法は以下の様な物です。</p>
+						<br><br>
+						
+						<img src="img/green/enishi_green_img06.png" alt="スタジオ縁 造園 壁面緑化 システム" />
+						
+						<br><br><br>
+						<p>現在のシステムにおいてもこれだけスマートに設置出来る壁面緑化、しかしその有用性が認められれば認められる程これからのパッケージは多様性と拡張性に更なる広がりを魅せる余幅多きカテゴリーなのです。</p>
+						<br><br>
+					
+						<div id="img10">
+							<span class="left"><img src="img/green/enishi_green_img07.png" alt="スタジオ縁 造園 壁面緑化 店舗デザイン" /></span>
+							<span class="right"><img src="img/green/enishi_green_img08.png" alt="スタジオ縁 造園 壁面緑化 店舗デザイン" /></span>
+						</div>
+					
+						<div id="text06">
+							<p>アイディア次第では無限の魅力と表現を併せ持つ壁面緑化、その可能性の見本としてこの様なパブリックスペースにおける施工例も在ります。私達の提案は元より、もしその可能性に更なる付加価値を見出す事が出来ましたら是非ともスタジオ縁にお手伝いさせて下さい。</p>
+						</div>
+						
+						<br>
+						<div class="border"></div>
+						<br><br>
+						
+						<p id="img_txt05"><img src="img/green/enishi_green_txt03.png" alt="text05" /></p>
+						
+						<p>一般造園業からスタートした私達スタジオ縁、その名の通り「縁」を大切に沢山のお客様に支えられて色々な植物に関する事業に携わっています。推進業務で在る「多様性と拡張性の高い緑化」は壁面緑化だけでは在りません、シーズンテーマやコーポレートテーマに沿ったご提案を随時提供出来る様に日々努力を惜しみません。</p>
+						<br>
+						<p>これからも新しい「緑化」の形を模索し続けるスタジオ縁、その提案事業にご興味が在りましたら是非お気軽にお問い合わせください。緑化設計の無料相談は「<a href="free.html"><b>設計相談</b></a>」から、一般業務に関するお問い合わせはお電話か「<a href="contact.html"><b>お問い合わせフォーム</b></a>」からお気軽にどうぞ。</p>
+						<br><br>
+						
+					</div>
+				
+				</article>
+			</div><!-- //#mainArea -->
+		
+		</div><!-- /#contentsArea -->
+	</div><!-- /#contentsFrame -->
+
+<!----------------------------------------------------------->
+<!---------------------- フッターエリア --------------------------->
+<!----------------------------------------------------------->
+
+	<script type="text/javascript">
+		footer();
+	</script>
+	
+</div><!-- /#frame -->
+
+</body>
+</html>

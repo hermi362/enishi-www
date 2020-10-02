@@ -1,0 +1,374 @@
+@charset "utf-8";
+@media only screen and (max-width:640px){
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+記事領域「共通」
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#mainArea h1{
+background:none;
+padding:0px 10px 6px 0px;
+font-weight:bold;
+}
+
+#mainArea .lead{
+	margin:0 15px;
+}
+#mainArea .pagingArea {
+	margin:15px 15px 0;
+}
+#mainArea h2 {
+    margin-bottom:74px;
+}
+
+/* ページャー */
+
+#mainArea .wp-pagenavi {
+    border-left:solid 1px #eeeeee;
+}
+#mainArea .current {
+    width:46px;
+    padding: 15px 0;
+}
+#mainArea .wp-pagenavi a.smaller,
+#mainArea .wp-pagenavi a.larger {
+    width: 40px;
+    padding: 15px 0;
+}
+#mainArea a.previouspostslink {
+    padding: 15px 9px;
+    width: auto;
+    margin-left: -1px;
+}
+#mainArea a.nextpostslink {
+    padding: 15px 12px;
+    width: auto;
+}
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+記事領域「トップページ」
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+.home #mainArea .resultsBox ul {
+    margin-right:-10px;
+}
+.home #mainArea .resultsBox li {
+    width: 50%;
+    margin-right:0;
+    margin-bottom: 10px;
+}
+.home #mainArea .resultsBox li a {
+    margin-right: 10px;
+}
+
+.home #mainArea .listContent {
+    width:100%;
+}
+.home #mainArea .listBox .left,
+.home #mainArea .listBox .right {
+    float:none;
+}
+.home #mainArea .listContent ul {
+    padding: 0 5px;
+    margin-bottom:15px;
+}
+.home #mainArea .listContent li {
+    margin-bottom: 10px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+記事領域「実績の一覧」
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#mainArea .archiveArea  ul {
+    overflow:hidden;
+    margin-right: 0;
+}
+#mainArea .archiveArea li {
+    width:auto;
+    float:none;
+    margin: 0;
+    border-top:dotted 1px #000;
+    overflow:hidden;
+    height:auto!important;
+    padding:20px 0;
+}
+#mainArea .archiveArea li:first-child {
+    border-top:none;
+}
+#mainArea .archiveArea .left {
+    float:left;
+    margin-right:-138px;
+}
+#mainArea .archiveArea .right {
+    float:right;
+    width:100%;
+}
+#mainArea .archiveArea .right>div {
+    margin-left:148px
+}
+#mainArea .archiveArea li .left p {
+    margin-bottom:0;
+}
+#mainArea .archiveArea li img {
+    width:138px;
+    height:103px;
+}
+#mainArea .archiveTitle {
+    font-weight:bold;
+}
+#mainArea .archiveArea li p.archiveNote {
+    position:relative;
+    padding: 3px 0 0 26px;
+}
+#mainArea .archiveArea li p.archiveNote span {
+    position:absolute;
+    top:0;
+    left:0;
+}
+#mainArea .archiveArea li .archiveNote img {
+    width:auto;
+    height:auto;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+記事領域「実績一覧」
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.single-result #contentsArea {
+    padding:73px 10px 0;
+    margin:0;
+}
+.single-result .sideNavi {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+}
+.single-result #mainArea .resultHead .resultTitle {
+    font-size:18px;
+}
+.single-result #mainArea .resultHead p {
+    font-size:12px;
+}
+.single-result #mainArea .resultHead .right {
+    margin-top:0;
+    margin-bottom:10px;
+}
+.single-result #mainArea .resultHead .left,
+.single-result #mainArea .resultHead .right {
+    float:none;
+}
+.single-result #mainArea .resultBody {
+    margin: 35px 0 25px;
+    line-height:1.4;
+}
+.single-result #mainArea .underwayArea {
+    padding:15px;
+}
+.single-result #mainArea .bx-wrapper .bx-viewport {
+    height:208px!important;
+}
+.single-result #mainArea .gallery .bx-wrapper .gallery-list li {
+    height: 208px;
+}
+.single-result #mainArea .gallery .bx-wrapper .gallery-list li p {
+    height: 208px;
+    width: 100%;
+}
+.single-result #mainArea .gallery .gallery-item span {
+    padding: 10px 15px;
+}
+.single-result #mainArea .gallery-pager {
+    display:none;
+}
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+記事領域「satatic(固定ページ共通)」
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.static .staticFoot ul {
+    margin-right:0;    
+}
+.static .staticFoot li {
+    width:auto;
+    margin-right:0;
+    float:none;
+}
+.static .staticFoot li:first-child {
+    border-bottom:none;
+}
+.static .headTitle span.block {
+    display:block;
+    color:#222;
+}
+.static td .mapicon {
+    position:absolute;
+    bottom: 0px;
+    right: 0px;
+}
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+記事領域「flow(ご依頼の流れ)」
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#flow .flowArea {
+    float:none;
+    width:100%;
+}
+#flow .step1to4 .left,
+#flow .step5to7 .left,
+#flow .step8to12 .left {
+    float:none;
+    padding: 5px 0;
+    margin: 0 10px;
+    width:100%;
+    text-align:left;
+}
+#flow .step1to4 .right,
+#flow .step5to7 .right,
+#flow .step8to12 .right {
+    float:none;
+    width:100%;
+    padding:10px 0;
+    min-height:0;
+}
+#flow .step1to4 .right>div,
+#flow .step5to7 .right>div,
+#flow .step8to12 .right>div {
+    padding: 0 10px;
+}
+#flow .flowArea .step,
+#flow .flowArea h3 {
+    display:inline;
+}
+#flow .step span {
+    vertical-align: -1px;
+}
+#flow .adviceArea {
+    float:none;
+    display:none;
+}
+#flow .consultBox {
+    padding: 15px 10px;
+    font-size:13px;
+    margin-bottom:20px;
+}
+#flow .consultBox .consultBtn {
+    font-size: 16px;
+    width:100%;
+}
+#flow .consultBox .consultBtn a,
+#flow .consultBox .consultBtn a:hover {
+    background-position:10px 9px;
+}
+#flow .consultBox .consultBtn a {
+    padding: 17px 0 17px 40px;
+}
+#flow .consultBox .consultBtn:after {
+    font-size: 22px;
+    position:absolute;
+    top: 12px;
+    right: 5px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+記事領域「consult_form」
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#consult_form h2 {
+    margin-bottom:20px;
+}
+#consult_form .consultArea ul li {
+    padding:22px 0;
+}
+#consult_form .consultArea .left,
+#consult_form .consultArea .right {
+    float:none;
+    width:100%;
+}
+#consult_form .consultArea .left {
+    margin-bottom:15px;
+}
+#consult_form .consultArea .right p {
+    margin:0 auto;
+}
+#consult_form .formArea h3 {
+    font-size:17px;
+}
+#consult_form .formArea ul {
+    padding:15px 20px;
+}
+#consult_form .formArea li {
+    float:none;
+    margin-top:10px;
+}
+#consult_form .formArea li:first-child {
+    margin-top:0;
+}
+#consult_form .formArea li.tel {
+    font-size:28px;
+}
+#consult_form .table01 th,
+#consult_form .table01 td {
+    width: 93.5%;
+    margin-top:-1px;
+    padding: 15px 3%;
+    display: block;
+}
+#consult_form .table01 span.block {
+    display:block;
+}
+#consult_form .table01 td {
+    overflow:hidden;
+}
+#consult_form .table01 span.wpcf7-list-item {
+	margin-right: 5px;
+	float:left;
+}
+#consult_form .table01 span.wpcf7-list-item:nth-child(4){
+	clear:both;
+}
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+記事領域「contact(お問い合せ)」
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#contact h2 {
+    margin-bottom:20px;
+}
+#contact .table01 th,
+#contact .table01 td {
+    width: 93.5%;
+    margin-top:-1px;
+    padding: 15px 3%;
+    display: block;
+}
+#contact .table01 span.block {
+    display:block;
+}
+#contact .table01 td {
+    overflow:hidden;
+}
+#contact .table01 span.wpcf7-list-item {
+	margin-right: 5px;
+	float:left;
+}
+#contact .table01 span.wpcf7-list-item:nth-child(4){
+	clear:both;
+}
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+投稿記事のフッター
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+.blog #mainArea .commentsArea a{
+	position:inherit;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+お問い合わせ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+.wpcf7 input[type="text"].m_size {
+	width: 78%;
+}
+.table01 input#tel1,
+.table01 input#tel2,
+.table01 input#tel3{
+	width:22%;
+}
+.table01 textarea{
+	width:90%;
+}
+.lock01 th {
+width: 30%;
+}

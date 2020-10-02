@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154862568-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154862568-1');
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="スタジオ縁,船橋,造園,植木,手入れ,消毒,害虫,伐採,庭造り,千葉">
+<meta name="description" content="お庭の手入れから、作庭までお気軽に問い合わせ下さい。(壁面緑化、屋上緑化、造園、舗装、店舗デザイン、コンサルティング、スタジオ縁、千葉)">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="google-site-verification" content="YtH6O4l0JyZG9y9YzuioF9M74YHSidUhfsqdrG5bfsM" /><!-- google index -->
+<meta name="msvalidate.01" content="A8105CD5E7869F63907FD6FF09734BD5" /><!-- b-ing index -->
+
+<!-- ファビコン -->
+<link rel="icon" href="img/common/cmn_favicon.png" type="image/png"/>
+
+<title>株式会社スタジオ縁￤船橋市から全国へ多様な緑化を提案します</title>
+
+<!-- StyleSheet -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css"><!-- web font -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css"><!-- slider -->
+
+<!-- JavaScript -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script><!-- slider -->
+
+<script type="text/javascript" src="js/jquery.ripples.js"></script><!-- 波紋エフェクト -->
+
+<script type="text/javascript" src="js/header.js"></script><!-- ヘッダ書き込み用 -->
+<script type="text/javascript" src="js/footer.js"></script><!-- フッタ書き込み用 -->
+
+<script>
+
+/* 波紋のエフェクト 読み込みが終わってから処理を行う  */
+/*$(window).load(function () {
+	$('#frame').ripples({
+	    resolution: 512,
+	    dropRadius: 20,
+	    perturbance: 0.04,
+	});
+});*/
+
+$(function(){
+	// MainSlider
+  $('#sliderPromo').bxSlider({
+    controls: true,
+    speed: 800,
+    pause: 7000,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: true,
+    slideMargin: 0,
+    minSlides: 1,
+    maxSlides: 1,
+    moveSlides: 1
+  });
+
+	// SubSlider
+  $('.slider_result').bxSlider({
+    controls: true,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: false,
+    slideWidth: 251,/*228*/
+    minSlides: 2,
+    maxSlides: 4,
+    slideMargin: 1,/*20*/
+    moveSlides: 1
+  });
+  
+  // 実績の紹介 個別ページ Slider
+  $('.gallery-list').bxSlider({
+    auto: true,
+    pause: 5000,
+    speed: 600,
+    mode: 'horizontal',  
+    infiniteLoop: false,
+    prevText: '<',  
+    nextText: '>',
+    slideWidth: 640,
+    pager: true,  
+    //easing: 'easeOutBounce',  
+    pagerCustom: '.gallery-pager'     
+  });
+
+	// gnavi
+	$('ul.gNavi li a').each(function(){
+		if($(this).attr('href') == location.href){
+			$(this).find('img').fadeTo(0,0);
+		}else{
+			$(this).hover(function(){
+		  	$(this).find('img').stop().fadeTo(200,0);
+	 		},function(){
+	  		if($(this).attr('href') != location.href){
+	 				$(this).find('img').stop().fadeTo(200,1);
+	    	}
+	  	});
+	  }
+	});
+	
+	// アコーディオンメニュー
+	$("#acMenu dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$(".acItem dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$("#menu").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav").slideToggle();
+	});
+	$("#menu2").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav2").slideToggle();
+	});
+	$("#menu3").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav3").slideToggle();
+	});
+	$("#menu4").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav4").slideToggle();
+	});
+
+	// to-top-btn
+	$(function () {
+		$(".pageTop").hide();
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.pageTop').fadeIn();
+			} else {
+				$('.pageTop').fadeOut();
+			}
+		});
+		$('.pageTop a').click(function () {
+			$('body,html').animate({scrollTop: 0}, 500);
+			return false;
+		});
+	});
+});
+
+</script>
+</head>
+
+<body class="home">
+
+
+	<a id="right-corner" href="employment.html">
+		<img src="img/common/nowhiring.png" alt="採用情報">
+	</a>
+	
+<!----------------------------------------------------------->
+<!---------------------- ヘッダーエリア -------------------------->
+<!----------------------------------------------------------->
+
+<div id="frame">
+	<div id="headerArea">
+		<div class="left">
+			<div class="logoBox">
+				<div class="logoMark"><a href="index.html">
+					<img class="hvr-push" src="img/common/cmn_header_logomark.png" alt="スタジオ縁 造園 緑化 ロゴ" />
+				</a></div>
+				<div class="logoType"><a href="index.html">
+					<img src="img/common/cmn_header_logotype.png" alt="スタジオ縁 造園 緑化 社名"/>
+				</a></div>
+			</div><!-- /.logoBox -->
+		</div>
+		<div class="right">
+			<a href="free.html"><p class="freeLogo hvr-grow-rotate"></p></a>
+			<a href="http://ameblo.jp/sasekei17/" target="_blank"><img src="img/common/banner.png" alt="" /></a>
+			<!-- <a href="yoga.html" target="_blank"><img src="img/common/banner_yoga.png" alt="ヨガ　レッスン" /></a> -->
+			<a href="https://www.facebook.com/Caf%C3%A9%E3%82%AD%E3%83%9F%E3%83%89%E3%83%AA-1935332606724163/" target="_blank">
+				<img src="img/common/banner_kimidori.png" alt="" />
+			</a>
+			<a href="https://shop.studioenishi.jp" target="_blank"><img src="img/common/banner-shop.png" alt="オンライン　ショップ" /></a>
+			<br>
+			<a href="http://ameblo.jp/sasekei17/" target="_blank">
+				<font size ="-1">　　　　　　　　　　　　　　　　植物とﾖｶﾞのお店<br>　　　　　　　　　　　　　　　 （ﾘﾗｸｾﾞｰｼｮﾝ空間）<br>　　　　　　　　　　　　　　　　</font>
+			</a>
+		</div>
+	</div><!-- /#headerArea -->
+	
+	<!-- スマホメニュー -->
+	<div id="spMenuArea">
+		<dl id="acMenu">
+			<dt><i class="icon-reorder"></i>MENU</dt>
+			<dd> 
+				<ul>
+					<li><a href="index.html">トップページ</a></li>
+					<li><a href="about.html">会社概要</a></li>
+					<li><a href="green.html">グリーンデザイン</a></li>
+					<li><a href="works.html">実績の紹介</a></li>
+					<li><a href="flow.html">ご依頼の流れ</a></li>
+					<li><a href="employment.html">採用情報</a></li>
+					<li><a href="contact.html">お問い合わせ</a></li>
+					<li><a href="free.html">無料設計相談</a></li>
+				</ul>
+			</dd>
+		</dl>
+	</div>
+
+	<!-- PCメニュー -->
+	<nav>
+		<div id="naviRap">
+			<div id="gNaviArea">
+				<ul class="gNavi">
+					<li class="menu5"><a href="about.html"><span class="menu_head">会</span>社概要<br><span class="menu_caption">About</span></a></li>
+					<li class="bar"><img src="img/common/cmn_hr.png" /></li>
+					<li class="menu1"><a href="green.html"><span class="menu_head">グ</span>リーンデザイン <br><span class="menu_caption">Green Design</span></a></li>
+					<li class="bar"><img src="img/common/cmn_hr.png" /></li>
+					<li class="menu2"><a href="works.html"><span class="menu_head">実</span>績の紹介<br><span class="menu_caption">Works</span></a></li>
+					<li class="bar"><img src="img/common/cmn_hr.png" /></li>
+					<li class="menu4"><a href="flow.html"><span class="menu_head">ご</span>依頼の流れ<br><span class="menu_caption">Work Flow</span></a></li>
+					<li class="bar"><img src="img/common/cmn_hr.png" /></li>
+					<li class="menu3"><a href="employment.html"><span class="menu_head">採</span>用情報<br><span class="menu_caption">Employment</span></a></li>
+					<li class="bar"><img src="img/common/cmn_hr.png" /></li>
+					<li class="menu6"><a href="contact.html"><span class="menu_head">お</span>問い合わせ<br><span class="menu_caption">Contact</span></a></li>
+				</ul>
+			</div><!-- /#gNaviArea -->
+		</div>
+	</nav>
+
+<!----------------------------------------------------------->
+<!---------------------- メインコンテンツ ------------------------->
+<!----------------------------------------------------------->
+
+	<div id="promoArea">
+		<div id="sliderPromo">
+			<div class="slidPromo">
+				<div id="slider1">
+					<a href="green.html">
+				    <div class="wrapper">
+			        <div class="textBox">
+			          <h3><img src="img/index/enishi_top_img_01_cap.png" alt="スタジオ縁 造園 緑化 提案" /></h3>
+			        </div>
+				    </div>
+					</a>
+				</div>
+			</div>
+			<div class="slidPromo">
+				<div id="slider2">
+					<a href="work_pri_manage07.html">
+				    <div class="wrapper">
+			        <div class="textBox">
+			          <h3><img src="img/index/enishi_top_img_02_cap.png" alt="スタジオ縁 造園 緑化 提案" /></h3>
+			        </div>
+				    </div>
+					</a>
+				</div>
+			</div>
+			<div class="slidPromo">
+				<div id="slider3">
+					<a href="work_pri_manage06.html">
+				    <div class="wrapper">
+				      <div class="textBox">
+			          <h3><img src="img/index/enishi_top_img_03_cap.png" alt="スタジオ縁 造園 緑化 提案" /></h3>
+			        </div>
+				    </div>
+					</a>
+				</div>
+			</div>
+		</div>
+	
+	</div><!-- //#promoArea -->
+
+
+
+	<div id="resultsFrame">
+	
+		<div id="headerArea">
+		</div>
+
+		<div style="padding-right: 80px;" class="right" id="ytplayer">	</div>
+
+
+		<div id="resultsArea">
+			<a href="works.html">
+				<div class="left">
+					<img class="hvr-wobble-horizontal" src="img/index/enishi_sub_works.png" alt="スタジオ縁 造園 緑化 最近の実績" />
+				</div>
+			</a>
+			<div class="right">
+				<div class="slider_result">
+					<div class="slide">
+						<a href="work_gov_const24.html">
+						<img src="img/index/work_gov_const24.jpg" alt="スタジオ縁 造園 緑化 壁面緑化施工" title="市道43-003号線ほか１路線歩道設置関連工事" /></a>
+					</div>
+					<div class="slide">
+						<a href="work_gov_const23.html">
+						<img src="img/index/work_gov_const23.jpg" alt="スタジオ縁 造園 緑化 壁面緑化施工" title="市道00-113号線道路改良工事" /></a>
+					</div>
+					<div class="slide">
+						<a href="work_gov_const22.html">
+						<img src="img/index/work_gov_const22.jpg" alt="スタジオ縁 造園 緑化 壁面緑化施工" title="高根町防火水槽解体撤去工事" /></a>
+					</div>
+					<div class="slide">
+						<a href="work_gov_const21.html">
+						<img src="img/index/work_gov_const21.jpg" alt="スタジオ縁 造園 緑化 壁面緑化施工" title="高根台処理分区長寿命化対策工事（その7）" /></a>
+					</div>
+					<div class="slide">
+						<a href="work_gov_const20.html">
+						<img src="img/index/work_gov_const20.jpg" alt="スタジオ縁 造園 緑化 壁面緑化施工" title="市道34-004号線道路改良" /></a>
+					</div>
+					
+					<div class="slide">
+						<a href="work_gov_const19.html">
+						<img src="img/index/work_gov_const19.jpg" alt="スタジオ縁 造園 緑化 壁面緑化施工" title="市道14-112号線道路改良" /></a>
+					</div>
+				
+					<div class="slide">
+						<a href="work_gov_const18.html">
+						<img src="img/index/work_gov_const18.jpg" alt="スタジオ縁 造園 緑化 壁面緑化施工" title="市道00-184号線区画線" /></a>
+					</div>
+					<div class="slide">
+						<a href="work_pri_manage25.html">
+						<img src="img/index/enishi_work_13_s.jpg" alt="スタジオ縁 造園 緑化 壁面緑化施工" title="代官山アドレス" /></a>
+					</div>
+				</div><!-- /.slider_result -->
+				<div class="slider1Nav">
+				  <p id="slider-prev">></p>
+				  <p id="slider-next"><</p>
+				</div><!-- /.sliderNav -->
+
+			</div>
+		</div><!-- //#resultsArea -->
+	</div><!-- //#resultsFrame -->
+
+<!----------------------------------------------------------->
+<!---------------------- フッターエリア --------------------------->
+<!----------------------------------------------------------->
+
+	<script type="text/javascript">
+		footer();
+	</script>
+	
+</div><!-- /#frame -->
+
+<!-- youtube playerscript -->
+<script>  
+  // This code loads the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // This function creates an <iframe> (and YouTube player)
+  //    after the API code downloads.
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('ytplayer', {
+    height: '270',
+    width: '480',
+    videoId: 'OkxQB9lQPnY',
+    playerVars: {
+      modestbranding: 1,
+      loop: 1,
+      playlist: 'OkxQB9lQPnY'
+    },
+    events: {
+      'onReady': onPlayerReady
+    }
+    });
+  }
+
+  // The API will call this function when the video player is ready.
+  function onPlayerReady(event) {
+    event.target.playVideo();
+  }	  
+</script>
+
+</body>
+</html>

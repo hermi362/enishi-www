@@ -1,0 +1,440 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154862568-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154862568-1');
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="スタジオ縁,船橋,造園,植木,手入れ,消毒,害虫,伐採,庭造り,千葉">
+<meta name="description" content="お庭の手入れから、作庭までお気軽に問い合わせ下さい。(壁面緑化、屋上緑化、造園、舗装、店舗デザイン、コンサルティング、スタジオ縁、千葉)">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<meta name="format-detection" content="telephone=no" />
+
+<!-- ファビコン -->
+<link rel="icon" href="img/common/cmn_favicon.png" type="image/png"/>
+
+<title>株式会社スタジオ縁￤船橋市から全国へ多様な緑化を提案します</title>
+
+<!-- StyleSheet -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css"><!-- web font -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css"><!-- slider -->
+
+<!-- JavaScript -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script><!-- slider -->
+<script type="text/javascript" src="js/jquery.ripples.js"></script><!-- 波紋エフェクト -->
+
+<script type="text/javascript" src="js/header.js"></script><!-- ヘッダ書き込み用 -->
+<script type="text/javascript" src="js/footer.js"></script><!-- フッタ書き込み用 -->
+
+<script>
+
+/* 波紋のエフェクト 読み込みが終わってから処理を行う  */
+/*$(window).load(function () {
+	$('#frame').ripples({
+	    resolution: 512,
+	    dropRadius: 20,
+	    perturbance: 0.04,
+	});
+});*/
+
+$(function(){
+	// MainSlider
+  $('#sliderPromo').bxSlider({
+    controls: true,
+    speed: 800,
+    pause: 7000,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: true,
+    slideMargin: 0,
+    minSlides: 1,
+    maxSlides: 1,
+    moveSlides: 1
+  });
+
+	// SubSlider
+  $('.slider_result').bxSlider({
+    controls: true,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: false,
+    slideWidth: 251,/*228*/
+    minSlides: 2,
+    maxSlides: 4,
+    slideMargin: 1,/*20*/
+    moveSlides: 1
+  });
+  
+  // 実績の紹介 個別ページ Slider
+  $('.gallery-list').bxSlider({
+    auto: true,
+    pause: 5000,
+    speed: 600,
+    mode: 'horizontal',  
+    infiniteLoop: false,
+    prevText: '<',  
+    nextText: '>',
+    slideWidth: 640,
+    pager: true,  
+    //easing: 'easeOutBounce',  
+    pagerCustom: '.gallery-pager'     
+  });
+
+	// gnavi
+	$('ul.gNavi li a').each(function(){
+		if($(this).attr('href') == location.href){
+			$(this).find('img').fadeTo(0,0);
+		}else{
+			$(this).hover(function(){
+		  	$(this).find('img').stop().fadeTo(200,0);
+	 		},function(){
+	  		if($(this).attr('href') != location.href){
+	 				$(this).find('img').stop().fadeTo(200,1);
+	    	}
+	  	});
+	  }
+	});
+	
+	// アコーディオンメニュー
+	$("#acMenu dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$(".acItem dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$("#menu").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav").slideToggle();
+	});
+	$("#menu2").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav2").slideToggle();
+	});
+	$("#menu3").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav3").slideToggle();
+	});
+	$("#menu4").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav4").slideToggle();
+	});
+
+	// to-top-btn
+	$(function () {
+		$(".pageTop").hide();
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.pageTop').fadeIn();
+			} else {
+				$('.pageTop').fadeOut();
+			}
+		});
+		$('.pageTop a').click(function () {
+			$('body,html').animate({scrollTop: 0}, 500);
+			return false;
+		});
+	});
+});
+
+</script>
+</head>
+
+<body>
+<div id="frame">
+<!----------------------------------------------------------->
+<!---------------------- ヘッダーエリア -------------------------->
+<!----------------------------------------------------------->
+
+		<script type="text/javascript">
+			header();
+		</script>
+
+<!----------------------------------------------------------->
+<!---------------------- メインコンテンツ ------------------------->
+<!----------------------------------------------------------->
+
+	<div id="pageInfo">
+		<h1><img src="img/flow/enishi_flow_title.png" alt="ご依頼の流れ" /></h1>
+	</div><!-- //#pageInfo -->
+ 
+	<div id="contentsFrame">
+		<div id="contentsArea">
+			<div id="mainArea">
+				<article>
+					<div class="static" id="flow">
+						<div class="flowFrame">
+							<div class="flowArea">
+								<h2 class="flow_title"><img src="img/common/cmn_titlel_icon.png" />フローチャート</h2>
+								<div class="flow_rapper">
+									<ul class="stepList1">
+										<li class="chapter1">無 料</li>
+										<li>
+											<div class="step1to4" id="step1box">
+												<div class="left">
+													<p class="step">STEP ①</p>
+													<h3>ご相談・敷地調査</h3>
+												</div>
+												<div class="right">
+													<div>
+														<ul class="stepText">
+															<li class="step1">・総予算</li>
+															<li>・資金計画のお打ち合わせ</li>
+															<li>・緑化・作業スケジュールの検討</li>
+															<li>・敷地条件の考察</li>
+															<li>※まずは、お問い合わせにてお気軽にご相談下さい。</li>
+														</ul>
+													</div>
+												</div>
+											</div><!-- ./flowStep -->
+										</li>
+										<li>
+											<div class="step1to4" id="step2box">
+												<div class="left">
+													<p class="step">STEP ②</p>
+													<h3>プランのご提案</h3>
+												</div>
+												<div class="right">
+													<div>
+														<ul class="stepText">
+															<li class="step2">・外郭的プランの提案と検討</li>
+															<li>・外観プランの設定</li>
+														</ul>
+													</div>
+												</div>
+											</div><!-- ./flowStep -->
+										</li>
+										<li>
+											<div class="step1to4" id="step3box">
+												<div class="left">
+													<p class="step">STEP ③</p>
+													<h3>工事費概算・<br>設計(作業)料提示</h3>
+												</div>
+												<div class="right">
+													<div>
+														<ul class="stepText">
+															<li class="step3">・最終プランの打ち合せ</li>
+															<li>・契約内容の確認</li>
+														</ul>
+													</div>
+												</div>
+											</div><!-- ./flowStep -->
+										</li>
+										<li class="stepLast">
+											<div class="step1to4" id="step4box">
+												<div class="left">
+													<p class="step">STEP ④</p>
+													<h3>お申し込み</h3>
+												</div>
+												<div class="right">
+													<div>
+														<ul class="stepText">
+															<li class="step4">・当社との緑化及び作業に関する意思決定</li>
+														</ul>
+													</div>
+												</div>
+											</div><!-- ./flowStep -->
+										</li>
+									</ul>
+								</div><!-- ./stepList1 -->
+								<ul class="stepList2">
+									<li class="chapter2">
+										<p>作業現場の担当者との作業確認</p>
+										<p class="chapterTxt">中間業者や別途業者との共同作業が発生する場合は担当者を含めた仮想ディレクションを行います<br />
+										※ミーティングはクライアント様からのご希望が在れば同様に行います</p>
+									</li>
+									<li>
+										<div class="step5to7" id="step5box">
+											<div class="left">
+												<p class="step">STEP ⑤</p>
+												<h3>ご契約</h3>
+											</div>
+											<div class="right">
+												<div>
+													<ul class="stepText">
+														<li class="step5">・業務契約の締結</li>
+														<li>・関連開発許可申請／予定地の法的準備（必要な場合）</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<p><!-- ./flowStep -->
+									</li>
+									<li>
+										<div class="step5to7" id="step6box">
+											<div class="left">
+												<p class="step">STEP ⑥</p>
+												<h3>実施設計</h3>
+											</div>
+											<div class="right">
+												<div>
+													<ul class="stepText">
+														<li class="step6">・設計・設備・仕様・デザイン打ち合わせ</li>
+														<li>・詳細図の作成</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<p><!-- ./flowStep -->
+									</li>
+									<li>
+										<div class="step5to7" id="step7box">
+											<div class="left">
+												<p class="step">STEP ⑦</p>
+												<h3>設計図書完成</h3>
+											</div>
+											<div class="right">
+												<div>
+													<ul class="stepText">
+														<li class="step7">・確認及び許可申請の提出（必要な場合）</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<p><!-- ./flowStep -->
+									</li>
+								</ul>
+								<p><!-- ./stepList2 --></p>
+								<ul class="stepList3">
+									<li class="chapter3">実質作業期間</li>
+									<li>
+										<div class="step8to12" id="step8box">
+												<div class="left">
+													<p class="step">STEP ⑧</p>
+													<h3>工事日決定</h3>
+												</div>
+											<div class="right">
+												<div>
+													<ul class="stepText">
+														<li class="step8">・雨天時の工期取り決め</li>
+														<li>・工事見積り調整</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<p><!-- ./flowStep -->
+									</li>
+									<li>
+										<div class="step8to12" id="step9box">
+											<div class="left">
+												<p class="step">STEP ⑨</p>
+												<h3>着工</h3>
+											</div>
+											<div class="right">
+												<div>
+													<ul class="stepText">
+														<li class="step9">・基礎工事開始</li>
+														<li>・現場定例打ち合わせ開始</li>
+													</ul>
+												</div>
+											</div>
+										</div><!-- ./flowStep -->
+									</li>
+									<li>
+										<div class="step8to12" id="step10box">
+											<div class="left">
+												<p class="step">STEP ⑩</p>
+												<h3>作業終了・完了検査</h3>
+											</div>
+											<div class="right">
+												<div>
+													<ul class="stepText">
+														<li class="step10">・社内検査</li>
+														<li>・担当検査</li>
+														<li>・完成立会検査</li>
+														<li>・完成（作業終了）の相互意思確認</li>
+													</ul>
+												</div>
+											</div>
+										</div><!-- ./flowStep -->
+									</li>
+									<li>
+										<div class="step8to12" id="step11box">
+											<div class="left">
+												<p class="step">STEP ⑪</p>
+												<h3>お引渡し</h3>
+											</div>
+											<div class="right">
+												<div>
+													<ul class="stepText">
+														<li class="step11">・作業終了に関する書類へのサイン</li>
+														<li>・各設備の取扱説明</li>
+													</ul>
+												</div>
+											</div>
+										</div><!-- ./flowStep -->
+									</li>
+									<li class="stepLast2">
+										<div class="step8to12" id="step12box">
+											<div class="left">
+												<p class="step">STEP ⑫</p>
+												<h3>過去案件掲載の承諾</h3>
+											</div>
+											<div class="right">
+												<div>
+													<ul class="stepText">
+														<li class="step12">・弊社ウェブサイトでの案件紹介の了承確認</li>
+														<li>※公開を望まれない場合は記録データの保管のみで公開は致しません</li>
+													</ul>
+												</div>
+											</div>
+										</div><!-- ./flowStep -->
+									</li>
+									<a href="free.html">
+										<li class="chapter4">
+											<p>アフターサービスと定期メンテナンス</p>
+											<p class="chapterTxt">メンテナンスに関する詳細は別途「無料設計相談」よりご相談下さい</p>
+										</li>
+									</a>
+								</ul><!-- ./stepList4 -->
+							</div><!-- ./flowArea -->
+							<div class="adviceArea">
+								<h2 class="flow_title"><img src="img/common/cmn_titlel_icon.png" />アドバイス</h2>
+								<div class="pointBox1">
+									<p>案件の場所や状況によって整備作業や緑化提案の作業日数、工程数、ご予算は大きく変動致します。初期段階の打ち合わせでクライアント様が希望される詳細な説明をお願い致します。また具体的な緑化の提案を希望される場合は事前に申し出て下さい、過去案件や事例などをご紹介致します。</p>
+								</div>
+								<div class="pointBox2">
+									<p>整備作業、緑化提案は共に自然を相手とする業務です。作業金の天候や気候は元より、企画段階で最終的な完成時期を逆算して作業工程を構築していきます。植物の種類や整備時の状況（他の植物との競合や人工物など）によりプランが変更する事も留意した余裕あるスケジュールを想定して下さい。</p>
+								</div>
+								<div class="pointBox3">
+									<p>野外での整備作業や緑化構築作業は天候次第では中止、延期される事があります。また気候（雨天頻度、湿度、気温、日照時間など）による予定の変更が在る事をご了承下さい、屋内においてもエアコンの温度設定や水やり頻度で植物の成長は変動します。</p>
+									
+									<p>クライアント様の一存で諸々の決定が行えない場合は他の担当者を含め、作業に関する取り決めを事前に済ませられる環境の用意をお願い致します。</p>
+								</div>
+								<div class="pointBox4">
+									<p>作業完了、緑化完成後の検査で行政検査が必要な案件は事前に申請をお願い致します。その後の管理、メンテナンスに関する諸事を含めて検査担当者へご説明致します。</p>
+								</div>
+							</div><!-- ./adviceArea -->
+						</div><!-- ./flowFrame -->
+					</div>
+				</article>
+			</div><!-- //#mainArea -->
+		</div><!-- /#contentsArea -->
+	</div><!-- /#contentsFrame -->
+
+<!----------------------------------------------------------->
+<!---------------------- フッターエリア --------------------------->
+<!----------------------------------------------------------->
+
+		<script type="text/javascript">
+			footer();
+		</script>
+	
+</div><!-- /#frame -->
+
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154862568-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154862568-1');
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="壁面緑化,緑化事業,屋上緑化,千葉,東京,神奈川,埼玉,船橋市,スタジオ縁,えにし">
+<meta name="description" content="壁面緑化、屋上緑化、造園、舗装、店舗デザイン、コンサルティング、スタジオ縁、千葉、東京、神奈川、船橋市">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<meta name="format-detection" content="telephone=no" />
+
+<!-- ファビコン -->
+<link rel="icon" href="img/common/cmn_favicon.png" type="image/png"/>
+
+<title>株式会社スタジオ縁￤船橋市から全国へ多様な緑化を提案します</title>
+
+<!-- StyleSheet -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css"><!-- web font -->
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/style-base.css">
+
+<link rel="stylesheet" href="css/jquery.bxslider.css"><!-- slider -->
+
+<!-- JavaScript -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script><!-- slider -->
+<script type="text/javascript" src="js/jquery.ripples.js"></script><!-- 波紋エフェクト -->
+
+<script type="text/javascript" src="js/header.js"></script><!-- ヘッダ書き込み用 -->
+<script type="text/javascript" src="js/footer.js"></script><!-- フッタ書き込み用 -->
+
+<script>
+
+/* 波紋のエフェクト 読み込みが終わってから処理を行う  */
+/*$(window).load(function () {
+	$('#frame').ripples({
+	    resolution: 512,
+	    dropRadius: 20,
+	    perturbance: 0.04,
+	});
+});*/
+
+$(function(){
+	// MainSlider
+  $('#sliderPromo').bxSlider({
+    controls: true,
+    speed: 800,
+    pause: 7000,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: true,
+    slideMargin: 0,
+    minSlides: 1,
+    maxSlides: 1,
+    moveSlides: 1
+  });
+
+	// SubSlider
+  $('.slider_result').bxSlider({
+    controls: true,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: false,
+    slideWidth: 251,/*228*/
+    minSlides: 2,
+    maxSlides: 4,
+    slideMargin: 1,/*20*/
+    moveSlides: 1
+  });
+  
+  // 実績の紹介 個別ページ Slider
+  $('.gallery-list').bxSlider({
+    auto: true,
+    pause: 5000,
+    speed: 600,
+    mode: 'horizontal',  
+    infiniteLoop: false,
+    prevText: '<',  
+    nextText: '>',
+    slideWidth: 640,
+    pager: true,  
+    //easing: 'easeOutBounce',  
+    pagerCustom: '.gallery-pager'     
+  });
+
+	// gnavi
+	$('ul.gNavi li a').each(function(){
+		if($(this).attr('href') == location.href){
+			$(this).find('img').fadeTo(0,0);
+		}else{
+			$(this).hover(function(){
+		  	$(this).find('img').stop().fadeTo(200,0);
+	 		},function(){
+	  		if($(this).attr('href') != location.href){
+	 				$(this).find('img').stop().fadeTo(200,1);
+	    	}
+	  	});
+	  }
+	});
+	
+	// アコーディオンメニュー
+	$("#acMenu dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$(".acItem dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$("#menu").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav").slideToggle();
+	});
+	$("#menu2").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav2").slideToggle();
+	});
+	$("#menu3").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav3").slideToggle();
+	});
+	$("#menu4").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav4").slideToggle();
+	});
+
+	// to-top-btn
+	$(function () {
+		$(".pageTop").hide();
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.pageTop').fadeIn();
+			} else {
+				$('.pageTop').fadeOut();
+			}
+		});
+		$('.pageTop a').click(function () {
+			$('body,html').animate({scrollTop: 0}, 500);
+			return false;
+		});
+	});
+});
+
+</script>
+</head>
+<body>
+	<div id="frame">
+
+<!----------------------------------------------------------->
+<!---------------------- ヘッダーエリア -------------------------->
+<!----------------------------------------------------------->
+
+		<script type="text/javascript">
+			header();
+		</script>
+
+<!----------------------------------------------------------->
+<!---------------------- メインコンテンツ ------------------------->
+<!----------------------------------------------------------->
+	
+<style>
+h2 img {
+	width: 20px;
+	margin-right: 10px;
+}
+.resultHead .right img {
+	width: 30px;
+	height: 30px;
+}
+div.border {
+	border-top:1px solid #4a5f53;
+}
+
+#mainArea #about h2.title {
+    padding: 10px 18px;
+    margin-bottom:20px;
+    background: #360;
+    color: #fff;
+    font-size: 15px;
+}
+
+#mainArea #about h2.title a {
+	color: #fff;
+}
+
+.bolder {
+	font-weight: 900;
+}
+
+#div_img img.left {
+	margin-right: 12px;
+}
+#div_img img.left,
+#div_img img.right {
+	margin-bottom: 20px;
+}
+</style>
+
+<div id="pageInfo">
+	<h1><img src="img/about/enishi_title_about.png" alt="スタジオ縁 造園 緑化 会社概要" /></h1>
+</div>
+<!-- //#pageInfo -->
+
+	<div id="contentsFrame">
+		<div id="contentsArea">
+			<div id="mainArea">
+				<article>
+					<div class="static" id="about">
+					
+						<h2 class="title"><img src="img/common/cmn_titlel_icon.png" />会社概要</h2>
+						<img src="img/about/enishi_about_img01.png" alt="スタジオ縁 造園 壁面緑化" /><br><br>
+						
+						<p>
+						社　　名：株式会社スタジオ縁<br>
+						代　　表：佐瀬 一宏<br>
+						所　　在：<br>
+						　　　　　本店　　　：　千葉県船橋市浜町1-6ファミリータウン5棟112<br>
+						　　　　　匝瑳事務所：　千葉県匝瑳市堀川4415<br>
+					<br>
+						取引銀行：千葉銀行、京葉銀行、東京東信用金庫<br>
+						設　　立：2013年7月18日<br>
+						資　　本：2,000,000円<br>
+					<br>
+						従業員　：スタッフ（正社員）　　　　　　13人<br>
+						　　　　　スタッフ（外注＋アルバイト）　20人<br>
+						　　　　　※スタッフ女性比率60％<br>
+						提携ローン先：<br>
+						　　　　　　　<br>
+						顧問弁護士：<br>
+						登録団体：船橋商工会議所<br>
+						　　　　　船橋市建設業協同組合<br>
+						　　　　　千葉県中小企業家同友会<br>
+						　　　　　一般造園施工管理技士の会<br>
+					<br>
+						主要業務：造園工事・植栽管理・舗装工事・外構工事、解体工事、貸し植木、ヨガ教室、Cafe<br>
+						得意業務：提案型緑化メンテナンス<br>
+						許　　可：建設業許可取得（造園、とび・土工、土木、舗装、解体、石工事、水道） 【千葉県知事（一般-27）第50079号】<br>
+						　　　　　産業廃棄物収集運搬許可取得　第01200194090号<br>
+						資　　格：自然再生士<br>
+						　　　　　1級造園施工管理技士（監理技術者）<br>
+						　　　　　1級土木施工管理技士（監理技術者）<br>
+						　　　　　2級土木施工管理技士<br>
+						　　　　　2級建築施工管理技士<br>
+						　　　　　建築物環境衛生管理技術者<br>
+						　　　　　清掃作業監督者<br>
+						　　　　　街路樹剪定士<br>
+						　　　　　千葉県農業管理指導士<br>
+						　　　　　遊具日常点検講習<br>
+						　　　　　グリーンアドバイザー<br>
+						</p>
+						
+						<a name="greeting"><br></a>
+						<h2 class="title"><img src="img/common/cmn_titlel_icon.png" />代表挨拶</h2>
+						
+						<p>長年に及ぶ経験と知識を生かし、個人から企業まで多様なニーズにお応えしたい。そんな緑化提案を目指して２０１３年、株式会社スタジオ縁は誕生しました。</p>
+						<br>
+						<p>多岐に渡る造園業務において私達が特に推進する「緑化提案」、それは一般的な造園業務は元より無限の可能性を秘めた表現方法の一つでも在ります。基本コンセプトは”人と自然の共和と共存”、都市部に限らずその姿を減らす自然の形を今一度再認識して頂ける総合的なグリーンデザインを念頭に沢山の緑化を行っています。</p>
+						<br>
+						<p>今目の前に在る物が今後も在るとは限りません、それは人が生活していく中で「豊かさ」を求める限り止まる事の無い歯車として廻り続けます。</p>
+						<br>
+						<p>十人十色、それぞれが求める豊さの価値は実に多く、そのどれもに合致する様なサービスは現代の技術を以てしても実現されてはいません。しかし普遍的な豊さの象徴は古代から、それは人が生活する中でどうしても共存しなければ成らない物として一つだけ存在し続けています。</p>
+						<br>
+						<p>そう、それは「自然」です。</p>
+						<br>
+						<p>近代化された生活や環境下に在って、唯一変わる事の無い豊かさの象徴。そして絶対的な存在でもある自然、時に人に牙を剥く自然との共和と共存は人が生きる上で永遠のテーマなのかもしれません。</p>
+						<br>
+						<p>私達スタジオ縁は希薄化した自然の豊かさとその意味に再び光を当て、そして新しい価値を沢山の人に知って頂きたいと考えています。端的な緑化事業とせず、長く愛され”そこに在る事が当然”の様な緑化提案、それがスタジオ縁が目指す人と自然の現代における関係性なのです。</p>
+						<br>
+						<br>
+						<p class="bolder">株式会社 スタジオ縁　代表取締役 佐瀬 一宏</p>
+						<br><br>
+						
+						
+						<div class="border"></div>
+						
+						<h2 class="title"><img src="img/common/cmn_titlel_icon.png" />沿革</h2>
+						
+						<p>
+						2013年7月 株式会社スタジオ縁 設立<br>
+						2013年7月 船橋事務所設置<br>
+						2015年8月 株式会社スタジオ縁 船橋本社オフィス設立<br>
+						2016年4月 船橋商工会議所 入会<br>
+						2017年3月 船橋市建設業協同組合 入会<br>
+						2020年8月 新オフィス設立
+						</p><br>
+						
+						<h2 class="title"><img src="img/common/cmn_titlel_icon.png" />組織関連図</h2>
+						
+						<p class="bolder">株式会社スタジオ縁</p><br>
+						<p><b>船橋本社事務所</b>（千葉県船橋市）<br>
+						〒273-0012 千葉県船橋市浜町1-6ファミリータウン5棟112</p><br>
+						<p><b>匝瑳圃場</b>（千葉県匝瑳市堀川）<br>
+						企業間取引のみの為、住所は記載しておりません。</p><br>
+						
+						<div class="border"></div><br>
+						
+						<p><b>常滑観葉植物／生産ナセリー</b>（愛知県常滑市）<br>
+						企業間取引のみの為、住所は記載しておりません。</p>
+						<br>
+						<img src="img/about/enishi_about_img02.png" alt="スタジオ縁 造園 緑化 観葉植物" /><br><br>
+							<div class="border"></div><br>
+						<div id="div_img">
+							<img class="left" src="img/about/enishi_about_img03.png" alt="スタジオ縁 造園 緑化 ナセリー" />
+							<img class="right" src="img/about/enishi_about_img04.png" alt="スタジオ縁 造園 緑化 ナセリー" />
+						</div>
+						<br><br>
+						<p>協力企業としての密接な連携関係にある常滑営業所では広大な敷地を利用して品質の高いインテリアグリーンの生産を行っております、沢山のお客様に満足して頂くだけの種類、品数、そして何より徹底された管理状態から生み出される品質を是非お確かめ下さい。</p>
+						
+					</div>
+				
+				</article>
+			</div><!-- //#mainArea -->
+		
+		</div><!-- /#contentsArea -->
+	</div><!-- /#contentsFrame -->
+
+<!----------------------------------------------------------->
+<!---------------------- フッターエリア --------------------------->
+<!----------------------------------------------------------->
+	<script type="text/javascript">
+		footer();
+	</script>
+	
+</div><!-- /#frame -->
+
+</body>
+</html>

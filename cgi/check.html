@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>メールフォーム</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<style type="text/css">
+#cr {
+	position: absolute;
+    left: -9999px;
+}
+body {
+	background-image: url(http://fujiokafix.atumari.net/template/bg2.jpg);
+	background-size: cover;
+	background-position: 50% 0;
+	height: 100%;
+    font-size: 12px;
+}
+tr {
+    font-size: 12px;
+}
+.title {
+    text-align: right;
+    padding-right: 10px;
+    width: 253px;
+    font-weight: bold;
+}
+.text{
+    width: 461px;
+}
+span {
+    width: 1000px;
+    padding-left: 153px;
+}
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+	<BR><BR>
+	<form method="post" action="mail.cgi">
+		<table border="0">
+		    _%mail%_
+		</table>
+		<br>
+		<br>
+		<span>※入力した内容を確認してください。よろしければ 送信ボタン をクリックしてください。</span><br><br>
+		<span>
+		<input type="submit" value=" 送 信 ">
+		<input type="button" value="もどる" onClick="JavaScript:history.back()">
+		</span>
+	</form>
+
+   <!-- ↓は著作権表示です。削除禁止！ -->
+   <div id="cr">_%copyright%_</div>
+   <!-- ↑は著作権表示です。削除禁止！ -->
+</body>
+</html>

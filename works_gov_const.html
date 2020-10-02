@@ -1,0 +1,731 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154862568-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154862568-1');
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="スタジオ縁,船橋,造園,植木,手入れ,消毒,害虫,伐採,庭造り,千葉">
+<meta name="description" content="お庭の手入れから、作庭までお気軽に問い合わせ下さい。(壁面緑化、屋上緑化、造園、舗装、店舗デザイン、コンサルティング、スタジオ縁、千葉)">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<meta name="format-detection" content="telephone=no" />
+
+<!-- ファビコン -->
+<link rel="icon" href="img/common/cmn_favicon.png" type="image/png"/>
+
+<title>株式会社スタジオ縁￤船橋市から全国へ多様な緑化を提案します</title>
+
+<!-- StyleSheet -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css"><!-- web font -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/image-effect.css"> <!-- 画像エフェクト用 -->
+<link rel="stylesheet" href="css/jquery.bxslider.css"><!-- slider -->
+
+<!-- JavaScript -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script><!-- slider -->
+<script type="text/javascript" src="js/jquery.ripples.js"></script><!-- 波紋エフェクト -->
+
+<script type="text/javascript" src="js/header.js"></script><!-- ヘッダ書き込み用 -->
+<script type="text/javascript" src="js/footer.js"></script><!-- フッタ書き込み用 -->
+
+<script>
+
+/* 波紋のエフェクト 読み込みが終わってから処理を行う  */
+/*$(window).load(function () {
+	$('#frame').ripples({
+	    resolution: 512,
+	    dropRadius: 20,
+	    perturbance: 0.04,
+	});
+});*/
+
+$(function(){
+	// MainSlider
+  $('#sliderPromo').bxSlider({
+    controls: true,
+    speed: 800,
+    pause: 7000,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: true,
+    slideMargin: 0,
+    minSlides: 1,
+    maxSlides: 1,
+    moveSlides: 1
+  });
+
+	// SubSlider
+  $('.slider_result').bxSlider({
+    controls: true,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: false,
+    slideWidth: 251,/*228*/
+    minSlides: 2,
+    maxSlides: 4,
+    slideMargin: 1,/*20*/
+    moveSlides: 1
+  });
+  
+  // 実績の紹介 個別ページ Slider
+  $('.gallery-list').bxSlider({
+    auto: true,
+    pause: 5000,
+    speed: 600,
+    mode: 'horizontal',  
+    infiniteLoop: false,
+    prevText: '<',  
+    nextText: '>',
+    slideWidth: 640,
+    pager: true,  
+    //easing: 'easeOutBounce',  
+    pagerCustom: '.gallery-pager'     
+  });
+
+	// gnavi
+	$('ul.gNavi li a').each(function(){
+		if($(this).attr('href') == location.href){
+			$(this).find('img').fadeTo(0,0);
+		}else{
+			$(this).hover(function(){
+		  	$(this).find('img').stop().fadeTo(200,0);
+	 		},function(){
+	  		if($(this).attr('href') != location.href){
+	 				$(this).find('img').stop().fadeTo(200,1);
+	    	}
+	  	});
+	  }
+	});
+	
+	// アコーディオンメニュー
+	$("#acMenu dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$(".acItem dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$("#menu").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav").slideToggle();
+	});
+	$("#menu2").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav2").slideToggle();
+	});
+	$("#menu3").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav3").slideToggle();
+	});
+	$("#menu4").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav4").slideToggle();
+	});
+
+	// to-top-btn
+	$(function () {
+		$(".pageTop").hide();
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.pageTop').fadeIn();
+			} else {
+				$('.pageTop').fadeOut();
+			}
+		});
+		$('.pageTop a').click(function () {
+			$('body,html').animate({scrollTop: 0}, 500);
+			return false;
+		});
+	});
+});
+
+</script>
+</head>
+<body>
+	<div id="frame">
+
+<!----------------------------------------------------------->
+<!---------------------- ヘッダーエリア -------------------------->
+<!----------------------------------------------------------->
+
+		<script type="text/javascript">
+			header();
+		</script>
+
+<!----------------------------------------------------------->
+<!---------------------- メインコンテンツ ------------------------->
+<!----------------------------------------------------------->
+
+	<style>
+	h2 img {
+		width: 20px;
+		margin-right: 10px;
+	}
+	.archiveNote img {
+		width: 20px;
+		height: 20px;
+	}
+	.archiveNote img.opacity {
+		opacity: 0.5 ;
+		filter: alpha(opacity=50) ;	/* Ie用 */
+	}
+	
+	/* リンクは黒 未定は#999 */
+	div.nolink{
+		color: #999;
+	}
+	</style>
+	
+	<div id="pageInfo">
+		<h1 class="workPage"><img src="img/works/enishi_works_title.png" alt="実績紹介" /></h1>    
+	</div><!-- //#pageInfo -->
+	
+	<div id="contentsFrame">
+		<div id="contentsArea">
+			<div id="mainArea">
+				<article>
+				<h2>
+					<img src="img/common/cmn_titlel_icon.png" />
+					<a href="works.html" style=" color:#ffffff;text-decoration:none;">実績一覧</a>　＞　官公庁工事
+				</h2>
+				<h1 style="font-size:24px;">官公庁工事</h1>
+				
+				<div class="archiveArea">
+					<ul>
+
+						<!--newitem-->
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const32.html"><img width="222" height="155" src="img/work_gov_const32/03.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const32.html">R2年・キッズゾーン表示設置工事</a></p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const31.html"><img width="222" height="155" src="img/work_gov_const31/03.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const31.html">R2年・都市計画道路3.6-36号線</a></p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const30.html"><img width="222" height="155" src="img/work_gov_const30/07.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const30.html">R2年・船橋市地方卸売市場第４配送センター舗装修繕</a></p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const29.html"><img width="222" height="155" src="img/work_gov_const29/07.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const29.html">R1年・市道00-183号線人にやさしい歩道整備工事</a></p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const28.html"><img width="222" height="155" src="img/work_gov_const28/17.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const28.html">R1年・アンデルセン公園にじの池周辺歩道工事</a></p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const27.html"><img width="222" height="155" src="img/work_gov_const27/27.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const27.html">R1年・若松公園ほか11公園遊戯施設改築工事</a></p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const33.html"><img width="222" height="155" src="img/work_gov_const33/07.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const33.html">R1年・葛飾地区管渠布設工事</a></p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const26.html"><img width="222" height="155" src="img/work_gov_const26/4.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const26.html">R1年・西浦処理区舗装復旧工事</a></p>
+								</div>
+							</div>
+						</li>
+		
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const25.html"><img width="222" height="155" src="img/work_gov_const25/33.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const25.html">R1年・日の出２丁目公園撤去工事</a></p>
+								</div>
+							</div>
+						</li>
+		
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const24.html"><img width="222" height="155" src="img/work_gov_const24/2.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const24.html">R1年・市道43-003号線ほか１路線歩道設置関連工事</a></p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const23.html"><img width="222" height="155" src="img/work_gov_const23/2.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const23.html">R1年・市道00-113号線道路改良工事</a></p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const22.html"><img width="222" height="155" src="img/work_gov_const22/2.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const22.html">H30年・高根町防火水槽解体撤去工事</a></p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const21.html"><img width="222" height="155" src="img/work_gov_const21/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const21.html">H30年・高根台処理分区長寿命化対策工事（その7）</a></p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const20.html"><img width="222" height="155" src="img/work_gov_const20/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const20.html">H30年・市道34-004号線道路改良</a></p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const19.html"><img width="222" height="155" src="img/work_gov_const19/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const19.html">H30年・市道14-112号線道路改良</a></p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const18.html"><img width="222" height="155" src="img/work_gov_const18/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const18.html">H30年・市道00-184号線区画線</a></p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const17.html"><img width="222" height="155" src="img/work70/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const17.html">H30年・二重川排水区路面復旧工事</a></p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const16.html"><img width="222" height="155" src="img/work64/003.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const16.html">H30年・船橋市場受変電設備改修工事</a></p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const15.html"><img width="222" height="155" src="img/work61/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const15.html">H30年・市道28-043号線道路改良工事</a></p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const14.html"><img width="222" height="155" src="img/work53/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const14.html">H30年・JR西船橋駅ロータリーベンチ設置</a></p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const13.html"><img width="222" height="155" src="img/work50/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const13.html">H29年・船橋市地方卸売市場植栽工事</a></p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const12.html"><img width="222" height="155" src="img/work48/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const12.html">H29年・市道00-190号線休憩施設設置工事</a></p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const11.html"><img width="222" height="155" src="img/work44/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const11.html">H29年・運動公園植栽工事</a></p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const10.html"><img width="222" height="155" src="img/work36/1.jpg" class="attachment-thumbnail wp-post-image" alt="スタジオ縁 造園 緑化 整備" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img class="opacity" src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const10.html">H29年・アンデルセン公園花壇設置工事</a></p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const09.html"><img width="222" height="155" src="img/work33/1.jpg" class="attachment-thumbnail wp-post-image" alt="exterior" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const09.html">H29年・前原小学校防球ネット改修工事</a></p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const08.html"><img width="222" height="155" src="img/work32/1.jpg" class="attachment-thumbnail wp-post-image" alt="exterior" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const08.html">H29年・市道00-008号線ほか道路改良工事</a></p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const07.html"><img width="222" height="155" src="img/work29/1.jpg" class="attachment-thumbnail wp-post-image" alt="exterior" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const07.html">H29年・市道00-113号線道路改良工事</a></p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const06.html"><img width="222" height="155" src="img/work28/1.jpg" class="attachment-thumbnail wp-post-image" alt="exterior" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const06.html">H29年・大径樹木伐採</a></p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const05.html"><img width="222" height="155" src="img/work19/1.jpg" class="attachment-thumbnail wp-post-image" alt="exterior" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const05.html">船橋市飯山満町樹木改植</a></p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const04.html"><img width="222" height="155" src="img/work22/1.jpg" class="attachment-thumbnail wp-post-image" alt="exterior" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" /></a>
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const04.html">H28年・ＪＲ船橋駅北口広場干渉樹木撤去</a></p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const03.html"><img width="222" height="155" src="img/work13/1.jpg" class="attachment-thumbnail wp-post-image" alt="exterior" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><a href="http://www.mot-art-museum.jp/" target="_blank">
+										<img src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" /></a>
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const03.html">H28年・船橋駅前歩道　土舗装</a></p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const02.html"><img width="222" height="155" src="img/work11/1.jpg" class="attachment-thumbnail wp-post-image" alt="exterior" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const02.html">H28年・アンデルセン公園芝張り工事</a></p>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="left imagelinksmall">
+								<p><a href="work_gov_const01.html"><img width="222" height="155" src="img/work08/enishi_works08_img01.jpg" class="attachment-thumbnail wp-post-image" alt="exterior" /></a></p>
+							</div>
+							<div class="right">
+								<div>
+									<p class="archiveNote">
+										<span><img src="img/works/telus-link-icon.png" alt="スタジオ縁 造園 緑化 整備" />
+										</span>官公庁工事
+									</p>
+									<p class="archiveTitle"><a href="work_gov_const01.html">H28年・アンデルセン公園企業花壇設置</a></p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<!-- pager -->
+				<div class="pager">
+				<div class='wp-pagenavi'>
+				<!--<span class='pages'>1 / 12</span><span class='current'>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>...</span><span class='nextpostslink'>NEXT →</span>-->
+				</div></div>
+				<!-- /pager -->
+				
+				</article>
+			</div><!-- //#mainArea -->
+		</div><!-- /#contentsArea -->
+	</div><!-- /#contentsFrame -->
+
+<!----------------------------------------------------------->
+<!---------------------- フッターエリア --------------------------->
+<!----------------------------------------------------------->
+
+		<script type="text/javascript">
+			footer();
+		</script>
+	
+</div><!-- /#frame -->
+
+</body>
+</html>

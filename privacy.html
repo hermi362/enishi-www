@@ -1,0 +1,356 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154862568-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154862568-1');
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="スタジオ縁,船橋,造園,植木,手入れ,消毒,害虫,伐採,庭造り,千葉">
+<meta name="description" content="お庭の手入れから、作庭までお気軽に問い合わせ下さい。(壁面緑化、屋上緑化、造園、舗装、店舗デザイン、コンサルティング、スタジオ縁、千葉)">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<meta name="format-detection" content="telephone=no" />
+
+<!-- ファビコン -->
+<link rel="icon" href="img/common/cmn_favicon.png" type="image/png"/>
+
+<title>株式会社スタジオ縁￤船橋市から全国へ多様な緑化を提案します</title>
+
+<!-- StyleSheet -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css"><!-- web font -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css"><!-- slider -->
+
+<!-- JavaScript -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script><!-- slider -->
+<script type="text/javascript" src="js/jquery.ripples.js"></script><!-- 波紋エフェクト -->
+
+<script type="text/javascript" src="js/header.js"></script><!-- ヘッダ書き込み用 -->
+<script type="text/javascript" src="js/footer.js"></script><!-- フッタ書き込み用 -->
+
+<script>
+
+/* 波紋のエフェクト 読み込みが終わってから処理を行う  */
+/*$(window).load(function () {
+	$('#frame').ripples({
+	    resolution: 512,
+	    dropRadius: 20,
+	    perturbance: 0.04,
+	});
+});*/
+
+$(function(){
+	// MainSlider
+  $('#sliderPromo').bxSlider({
+    controls: true,
+    speed: 800,
+    pause: 7000,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: true,
+    slideMargin: 0,
+    minSlides: 1,
+    maxSlides: 1,
+    moveSlides: 1
+  });
+
+	// SubSlider
+  $('.slider_result').bxSlider({
+    controls: true,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: false,
+    slideWidth: 251,/*228*/
+    minSlides: 2,
+    maxSlides: 4,
+    slideMargin: 1,/*20*/
+    moveSlides: 1
+  });
+  
+  // 実績の紹介 個別ページ Slider
+  $('.gallery-list').bxSlider({
+    auto: true,
+    pause: 5000,
+    speed: 600,
+    mode: 'horizontal',  
+    infiniteLoop: false,
+    prevText: '<',  
+    nextText: '>',
+    slideWidth: 640,
+    pager: true,  
+    //easing: 'easeOutBounce',  
+    pagerCustom: '.gallery-pager'     
+  });
+
+	// gnavi
+	$('ul.gNavi li a').each(function(){
+		if($(this).attr('href') == location.href){
+			$(this).find('img').fadeTo(0,0);
+		}else{
+			$(this).hover(function(){
+		  	$(this).find('img').stop().fadeTo(200,0);
+	 		},function(){
+	  		if($(this).attr('href') != location.href){
+	 				$(this).find('img').stop().fadeTo(200,1);
+	    	}
+	  	});
+	  }
+	});
+	
+	// アコーディオンメニュー
+	$("#acMenu dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$(".acItem dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$("#menu").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav").slideToggle();
+	});
+	$("#menu2").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav2").slideToggle();
+	});
+	$("#menu3").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav3").slideToggle();
+	});
+	$("#menu4").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav4").slideToggle();
+	});
+
+	// to-top-btn
+	$(function () {
+		$(".pageTop").hide();
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.pageTop').fadeIn();
+			} else {
+				$('.pageTop').fadeOut();
+			}
+		});
+		$('.pageTop a').click(function () {
+			$('body,html').animate({scrollTop: 0}, 500);
+			return false;
+		});
+	});
+});
+
+</script>
+</head>
+<body>
+	<div id="frame">
+<!----------------------------------------------------------->
+<!---------------------- ヘッダーエリア -------------------------->
+<!----------------------------------------------------------->
+		<script type="text/javascript">
+			header();
+		</script>
+
+<!----------------------------------------------------------->
+<!---------------------- メインコンテンツ ------------------------->
+<!----------------------------------------------------------->
+
+<style>
+#contentsFrame {
+	margin-bottom: 0;
+}
+
+/* iframeの下隙間をなくす */
+iframe {
+    vertical-align: bottom;
+}
+#consult_form h2 img {
+	width: 20px;
+	margin-right: 10px;
+}
+/* pp系のメインテキスト */
+.main_text .left img {
+	width: 583px;
+	height: 46px;
+}
+.text_head {
+	vertical-align: top;
+}
+.left p {
+	margin-bottom: 10px;
+}
+</style>
+
+	<div id="pageInfo">
+		<h1 class="contact"><img src="img/privacy/enishi_pp_title.png" alt="プライバシーポリシー" /></h1>
+	</div><!-- //#pageInfo -->
+	 
+	<div id="contentsFrame">
+		<div id="contentsArea">
+			<div id="mainArea">
+				<article>
+				
+					<div class="static" id="consult_form">
+						<h2><img src="img/common/cmn_titlel_icon.png" />プライバシーポリシー</h2>
+						<div class="consultArea main_text">
+						
+							<ul>
+								<li class="top_list">
+									<div class="left">
+										<h3><img src="img/privacy/enishi_pp_01.png" alt="個人情報保護宣言" class="alignnone size-full wp-image-400" /></h3>
+										<p>株式会社スタジオ縁は、お客様の氏名・生年月日・住所・お申し込みのサービス内容等の個人情報の保護に関し、以下の取組みを実施致しております。</p>
+									</div>
+									<div class="right">
+										<p><img src="img/privacy/enishi_pp_img01.png" alt="consul_photo01" width="222" height="155" class="alignnone size-full wp-image-401" /></p>
+									</div>
+								</li>
+								<li>
+									<div class="left">
+										<h3><img src="img/privacy/enishi_pp_02.png" alt="個人情報保護方針" class="alignnone size-full wp-image-406" /></h3>
+										
+										<table>
+											<tr><td class="text_head"><p>１．</p></td><td><p>当社は、個人情報に関する法令及びその他の規範を遵守し、お客様の大切な個人情報の保護に万全を尽くします。</p></td></tr>
+											<tr><td class="text_head"><p>２．</p></td><td><p>当社は、お客様の個人情報については下記の目的の範囲内で適正に取り扱いさせて頂きます。</p></td></tr>
+											<tr><td class="text_head"></td><td>
+												<table>
+													<tr><td class="text_head"><p>Ａ：</p></td><td><p>ご本人確認、ご利用料金の請求及びご利用料金・ご利用サービス提供条件の変更、工事日、ご利用サービスの停止・中止・契約解除の通知並びにその他当社サービスの提供に係る事</p></td></tr>
+													<tr><td class="text_head"><p>Ｂ：</p></td><td><p>電話、電子メール、郵送等各種媒体により、当社のサービスに関する販売推奨・アンケート調査および景品等の送付を行う事</p></td></tr>
+													<tr><td class="text_head"><p>Ｃ：</p></td><td><p>当社のサービスの改善又は新たなサービスの開発を行う事</p></td></tr>
+													<tr><td class="text_head"><p>Ｄ：</p></td><td><p>お問合せ、ご相談にお答えする事</p></td></tr>
+												</table>
+											</td></tr>
+										</table>
+									
+									</div>
+									<div class="right">
+										<p><img src="img/privacy/enishi_pp_img02.png" alt="consul_photo02" width="222" height="155" class="alignnone size-full wp-image-407" /></p>
+									</div>
+								</li>
+								<li>
+									<div class="left">
+										<h3><img src="img/privacy/enishi_pp_03.png" alt="個人情報の取り扱いについて" class="alignnone size-full wp-image-409" /></h3>
+										<p>尚、上記利用目的の他、サービス・アンケート等により個別に利用目的を定める場合があります。</p><br/>
+										
+										<table>
+											<tr><td class="text_head"><p>３．</p></td><td><p>当社は、お客様の個人情報を適正に取扱う為、社内規程及び社内管理体制の整備、従業員の教育、並びに、個人情報への不正アクセスや個人情報の紛失、破壊、改竄及び漏洩等防止に関する適切な措置を行い、また、その見直しを継続して図る事により、個人情報の保護に努めてまいります。</p></td></tr>
+											<tr><td class="text_head"><p>４．</p></td><td><p>当社は、お客様の個人情報については、上記利用目的を達成する為、業務委託先又は提携先に預託する場合御座います。その場合は、個人情報の保護が十分に図られている企業を選定し、個人情報保護の契約を締結する等必要かつ適切な処置を実施致します。尚、法令等に基づき裁判所・警察機関などの公的機関から開示の要請があった場合については、当該公的機関に提供する事が御座います。</p></td></tr>
+											<tr><td class="text_head"><p>５．</p></td><td><p>当社では、お客様の個人情報の保護を図る為に、また、法令その他の規範の変更に対応する為に、プライバシーポリシーを改定する事が御座います。改定があった場合はウェブサイトにてお知らせ致します。</p></td></tr>
+										</table>
+										
+									</div>
+									<div class="right">
+										<p><img src="img/privacy/enishi_pp_img03.png" alt="consul_photo03" width="222" height="155" class="alignnone size-full wp-image-410" /></p>
+									</div>
+								</li>
+								
+								<li>
+									<div class="left">
+										<h3><img src="img/privacy/enishi_pp_04.png" alt="保証及び責任制限" class="alignnone size-full wp-image-409" /></h3>
+										<p>
+										当社ウェブサイトの利用は、お客様の責任において行われるものとします。<br/>
+										
+										当ウェブサイト及び当ウェブサイトにリンクが設定されている他のウェブサイトから取得された各種情報の利用によって生じたあらゆる損害に関して、当社は一切の責任を負いません。
+										</p>
+									</div>
+									<div class="right">
+										<p><img src="img/privacy/enishi_pp_img04.png" alt="consul_photo04" width="222" height="155" class="alignnone size-full wp-image-410" /></p>
+									</div>
+								</li>
+								
+								<li>
+									<div class="left">
+										<h3><img src="img/privacy/enishi_pp_05.png" alt="準拠法" class="alignnone size-full wp-image-409" /></h3>
+										<p>株式会社スタジオ縁ウェブサイトは株式会社スタジオ縁の管理下にあります。</p>
+										
+										<p>当ウェブサイトは法律の異なる全世界の国々からアクセスする事が可能ですが、当ウェブサイトにアクセスされたお客様及び当社の両者は、かかる法律原理の違いに関わらず、当ウェブサイトの利用に関して日本国の法律及び千葉県の条例に拘束される事に同意するものとします。また当社は当ウェブサイト上で、お客様の環境において当ウェブサイトのコンテンツが適切であるかなどの記述や表示は一切行いません。当ウェブサイトへのアクセスはお客様の自由意志によるものとし、当ウェブサイトの利用に関しての責任はお客様にあるものとします。</p>
+									</div>
+									<div class="right">
+										<p><img src="img/privacy/enishi_pp_img05.png" alt="consul_photo05" width="222" height="155" class="alignnone size-full wp-image-410" /></p>
+									</div>
+								</li>
+								<li>
+									<div class="left">
+										<h3><img src="img/privacy/enishi_pp_06.png" alt="プライバシーポリシーに関する参照する法令等" class="alignnone size-full wp-image-409" /></h3>
+										
+										<p><a target="_blank" href="http://law.e-gov.go.jp/htmldata/H15/H15HO057.html">個人情報の保護に関する法律（平成15年5月30日法律第57号）</a></p>
+										<p><a target="_blank" href="http://law.e-gov.go.jp/htmldata/H15/H15SE507.html">個人情報の保護に関する法律施行令（平成15年12月10日政令第507号）</a></p>
+										<p><a target="_blank" href="http://www.jisc.go.jp/app/JPS/JPSO0020.html">JISQ15001:2006個人情報保護マネージメントシステム-要求事項【JIS規格番号からJISを検索】で　Q15001を指定して参照する。</a></p>
+										<p><a target="_blank" href="http://www.reiki.metro.tokyo.jp/reiki_honbun/ag10102211.html">東京都個人情報保護条例（平成02年12月21日条例第113号）</a></p>
+										<p><a target="_blank" href="http://www.jipdec.or.jp/">（財）日本情報処理開発協会</a></p>
+										<p><a target="_blank" href="http://www.e-gov.go.jp/">電子政府の総合窓口</a></p>
+										<p><a target="_blank" href="http://www.meti.go.jp/kohosys/topics/10000098/index.html">経済産業省　情報セキュリティ政策関連のページ（平成12年4月）</a></p>
+										<p><a target="_blank" href="http://www.meti.go.jp/">経済産業省</a></p>
+										<p><a target="_blank" href="http://www.meti.go.jp/policy/it_policy/privacy/080229kaisei-guideline.pdf">経済産業省 ｢個人情報保護に関する法律についての経済産業分野を対象とするガイドライン｣（平成20年2月29日厚生労働省・経済産業省告示第1号）</a></p>
+										<p><a target="_blank" href="http://law.e-gov.go.jp/htmldata/S60/S60HO088.html">厚生労働省 ｢労働者派遣事業の適正な運営の確保及び派遣労働者の就業条件の整備等に関する法律」（昭和60年法律第88号）</a></p>
+										<p><a target="_blank" href="http://www.mhlw.go.jp/topics/2004/07/tp0701-1.html">事業者が講ずべき措置に関する指針」（平成16年7月1日）</a></p>
+										<p><a target="_blank" href="http://www.ipa.go.jp/security/index.html">情報処理振興事業協会（IPA）セキュリティセンター</a></p>
+									
+									</div>
+									<div class="right">
+										<p><img src="img/privacy/enishi_pp_img06.png" alt="consul_photo06" width="222" height="155" class="alignnone size-full wp-image-410" /></p>
+									</div>
+								</li>
+								<li>
+									<div class="left">
+										<h3><img src="img/privacy/enishi_pp_07.png" alt="免責事項及び運営について" class="alignnone size-full wp-image-409" /></h3>
+										<p>当ウェブサイト（<a target="_blank" href="http://enishioffice.tumblr.com">http://enishioffice.tumblr.com</a>）は、株式会社スタジオ縁（以下、弊社と表記）が管理し、弊社を含む協力企業が情報を提供しているウェブサイトです。当ウェブサイトを利用される前に以下の注意点をお読み頂き、細事了解の上でご利用下さい。尚、株式会社スタジオ縁は、当ウェブサイトの利用条件を予告なしに変更する事がありますので、予めご了承下さい。</p>
+										<br>
+										<p>Ａ：将来の見通しに関する事項</p>
+										
+										<p>当ウェブサイトに掲載されている情報には、業績等将来の見通しに関する事項が含まれている場合があります。こうした事項には一定のリスクや不確実性などが含まれており、経済情勢や市場の動向の変化等により、将来における弊社の実際の業績と必ずしも一致するものではありません。尚、上記のリスクや不確実性は、事業等のリスクに記載されているものを含みます。</p>
+										<br>
+										<p>Ｂ：免責事項</p>
+										
+										<p>弊社は、当ウェブサイトへの情報・資料の掲載には注意を払っておりますが、掲載された情報の内容の正確性については一切保証致しません。また、当ウェブサイトに掲載された情報・資料を利用、使用、ダウンロードするなどの行為に関連して生じたあらゆる損害等についても、理由の如何に関わらず、弊社は一切責任を負いません。また、当サイトに掲載している情報には、協力企業のほか第三者が提供している情報が含まれていますが、これらは皆さまの便宜の為に提供しているものであり、弊社はその内容の正確性については一切責任を負いかねますのでご了承下さい。</p>
+										<br>
+										<p>Ｃ：その他</p>
+										
+										<p>当ウェブサイト内のそれぞれのページで上記以外の注意事項を記述してある場合がありますので、併せてお読み下さい。</p>
+									</div>
+									<div class="right">
+										<p><img src="img/privacy/enishi_pp_img07.png" alt="consul_photo07" width="222" height="155" class="alignnone size-full wp-image-410" /></p>
+									</div>
+								</li>
+								<li>
+									<div class="left">
+										<h3><img src="img/privacy/enishi_pp_08.png" alt="個人情報のお問い合わせ" class="alignnone size-full wp-image-409" /></h3>
+										<p>弊社保有の個人情報の取り扱いに関するお問い合わせは、以下までお願いします。</p>
+										
+										<a class="hvr-push" href="contact.html"><p id="pp_ml"></p></a>
+									</div>
+									<div class="right">
+										<p><img src="img/privacy/enishi_pp_img08.png" alt="consul_photo08" width="222" height="155" class="alignnone size-full wp-image-410" /></p>
+									</div>
+								</li>
+							</ul>
+						
+						</div>
+					</div>
+				</article>
+			</div><!-- //#mainArea -->
+		</div><!-- /#contentsArea -->
+	</div><!-- /#contentsFrame -->
+
+<!----------------------------------------------------------->
+<!---------------------- フッターエリア --------------------------->
+<!----------------------------------------------------------->
+
+		<script type="text/javascript">
+			footer();
+		</script>
+	
+</div><!-- /#frame -->
+
+</body>
+</html>
