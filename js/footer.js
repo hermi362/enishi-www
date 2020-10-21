@@ -58,7 +58,7 @@ function footer(rootDir){
     html += '		</div>';
 	html += '		<div class="area03">';
 	html += '			<ul>';
-	html += '				<li><a class="hvr-push" href="https://www.google.co.jp/maps/place/%E3%80%92273-0012+%E5%8D%83%E8%91%89%E7%9C%8C%E8%88%B9%E6%A9%8B%E5%B8%82%E6%B5%9C%E7%94%BA%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%96%E2%88%92%EF%BC%95+%E8%88%B9%E6%A9%8B%E3%83%95%E3%82%A1%E3%83%9F%E3%83%AA%E3%83%BC%E3%82%BF%E3%82%A6%E3%83%B3%EF%BC%95%E5%8F%B7%E6%A3%9F/@35.6898888,139.9901302,17z/data=!3m1!4b1!4m2!3m1!1s0x60187fc5ae3d239b:0xeaa094e33198f759?hl=ja" target="_brank"><p class="access"></p>ｱｸｾｽﾏｯﾌﾟ</a></li>';
+	html += '				<li><a class="hvr-push" href="https://goo.gl/maps/pTZo269LPwkDzq2s7" target="_blank"><p class="access"></p>ｱｸｾｽﾏｯﾌﾟ</a></li>';
 	html += '				<li><a class="hvr-push" href="contact.html"><p class="ml"></p></a></li>';
 	html += '			</ul>';
 	html += '		</div>';
