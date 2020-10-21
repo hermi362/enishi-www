@@ -727,10 +727,10 @@ a,a:hover{
 
 #footerArea .area03 .beckon {
   position: relative;
-  left: -15px;
-  bottom: -10px;
-  width: 70px;
-  height: 70px;
+  left: -18px;
+  bottom: 4px;
+  width: 76px;
+  height: 58px;
   background-image: url("../img/common/cmn_footer_map_beckon.png");
   background-repeat:no-repeat;
   -moz-background-size:contain;
@@ -802,7 +802,7 @@ a,a:hover{
 }
 #footerArea .area03{
 	float:right;
-	padding-top:3px;
+	padding-top:7px;
 }
 #footerArea .area03 ul{
 	overflow:hidden;
