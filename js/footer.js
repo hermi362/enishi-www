@@ -57,6 +57,7 @@ function footer(rootDir){
 	html += '			</ul>';
     html += '		</div>';
 	html += '		<div class="area03">';
+	html += '			<div class="beckon"></div>';
 	html += '			<ul>';
 	html += '				<li><a class="hvr-push" href="https://goo.gl/maps/pTZo269LPwkDzq2s7" target="_blank"><p class="access"></p>ｱｸｾｽﾏｯﾌﾟ</a></li>';
 	html += '				<li><a class="hvr-push" href="contact.html"><p class="ml"></p></a></li>';
