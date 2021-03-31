@@ -39,7 +39,7 @@ def shrinkJPEG(f_img):
     stat_result = os.stat(f_img)  # get modification time
     mtime = stat_result.st_mtime
 
-    img.save(f_img, exif=exif)
+    img.save(f_img, exif=exif, optimize=True, quality=85)
     # NOTE: saving EXIF data like this means that the new reduced resolution is NOT in the EXIF data.
     
     img.close()  # close underlying jpg file if not already closed
