@@ -31,6 +31,24 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/jquery.bxslider.css"><!-- slider -->
 
+<style>
+.corpmessage-block {
+	position: relative; 
+	margin: auto; 
+	width: 50%; 
+	text-align: center;
+}
+.corpmessage-img {
+	width: 100%; 
+	border: 2px #336600 solid; 
+	margin: 1em; 
+	padding: 0.5em;
+}
+.corpmessage-tag {
+	position: absolute; top: 60px; left: -10em; font-size: 24px
+}
+</style>
+
 <!-- JavaScript -->
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.bxslider.min.js"></script><!-- slider -->
@@ -278,8 +296,11 @@ $(function(){
 	
 	</div><!-- //#promoArea -->
 
-	<div style="text-align: center;">
-		<img src="img/index/enishi-pride.jpg" alt="縁プリアド　社訓" style="width: 40%; border: 2px #336600 solid; margin: 1em; padding: 0.5em;">
+
+	<!-- Corporate message (社訓) -->
+	<div class="corpmessage-block">
+		<img src="img/index/enishi-pride.jpg" alt="縁プリアド　社訓" class="corpmessage-img">
+		<div class="corpmessage-tag">Corporate message</div>
 	</div>
 
 	<div id="resultsFrame">
@@ -287,7 +308,7 @@ $(function(){
 		<div id="headerArea">
 		</div>
 
-		<div style="padding-right: 80px;" class="right" id="ytplayer">	</div>
+		<div style="float: right; padding-right: 80px;" id="ytplayer">	</div>
 
 
 		<div id="resultsArea">
