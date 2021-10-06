@@ -53,8 +53,8 @@ function header(rootDir){
 	html += '					</li>';
 	html += '					<li class="bar"><img src="img/common/cmn_hr.png" /></li>';
 	html += '					<li class="menu1">';
-	html += '						<a href="green.html"><span class="menu_head">グ</span>リーンデザイン <br>';
-	html += '							<span class="menu_caption">Green Design</span>';
+	html += '						<a href="contrib.html"><span class="menu_head">社</span>会貢献活動<br>';
+	html += '							<span class="menu_caption">Contribution</span>';
 	html += '						</a>';
 	html += '					</li>';
 	html += '					<li class="bar"><img src="img/common/cmn_hr.png" /></li>';
