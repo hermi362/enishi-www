@@ -31,10 +31,10 @@ NewEntry = '''
 
 
 # here are your parameters
-theCaption = "R2年・市道45-022号線舗装修繕工事"
-seed = "gov_const"
-idx = "35"             # the next number in the series of works.
-thumb = "thumb"        # image file for thumbnail, sans extension.
+theCaption = "R3年・高根町 資材小屋改修"
+seed = "pri_const"
+idx = "28"
+thumb = "thumb"
 
 # massage parameters
 theListingFile = "works_" + seed + ".html"

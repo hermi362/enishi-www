@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154862568-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154862568-1');
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="スタジオ縁,船橋,造園,植木,手入れ,消毒,害虫,伐採,庭造り,千葉">
+<meta name="description" content="お庭の手入れから、作庭までお気軽に問い合わせ下さい。(壁面緑化、屋上緑化、造園、舗装、店舗デザイン、コンサルティング、スタジオ縁、千葉)">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<meta name="format-detection" content="telephone=no" />
+
+<!-- ファビコン -->
+<link rel="icon" href="img/common/cmn_favicon.png" type="image/png"/>
+
+<title>株式会社スタジオ縁￤船橋市から全国へ多様な緑化を提案します</title>
+
+<!-- StyleSheet -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css"><!-- web font -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css"><!-- slider -->
+
+<!-- JavaScript -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script><!-- slider -->
+
+<script type="text/javascript" src="js/header.js"></script><!-- ヘッダ書き込み用 -->
+<script type="text/javascript" src="js/footer.js"></script><!-- フッタ書き込み用 -->
+
+<script>
+
+$(function(){
+	// MainSlider
+  $('#sliderPromo').bxSlider({
+    controls: true,
+    speed: 800,
+    pause: 7000,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: true,
+    slideMargin: 0,
+    minSlides: 1,
+    maxSlides: 1,
+    moveSlides: 1
+  });
+
+	// SubSlider
+  $('.slider_result').bxSlider({
+    controls: true,
+    useCSS: false,
+    captions: true,
+    auto: true,
+    pager: false,
+    slideWidth: 251,/*228*/
+    minSlides: 2,
+    maxSlides: 4,
+    slideMargin: 1,/*20*/
+    moveSlides: 1
+  });
+  
+  // 実績の紹介 個別ページ Slider
+  $('.gallery-list').bxSlider({
+    auto: true,
+    pause: 5000,
+    speed: 600,
+    mode: 'horizontal',  
+    infiniteLoop: true,
+    prevText: '<',  
+    nextText: '>',
+    slideWidth: 640,
+    pager: true,  
+    //easing: 'easeOutBounce',  
+    pagerCustom: '.gallery-pager'     
+  });
+
+	// gnavi
+	$('ul.gNavi li a').each(function(){
+		if($(this).attr('href') == location.href){
+			$(this).find('img').fadeTo(0,0);
+		}else{
+			$(this).hover(function(){
+		  	$(this).find('img').stop().fadeTo(200,0);
+	 		},function(){
+	  		if($(this).attr('href') != location.href){
+	 				$(this).find('img').stop().fadeTo(200,1);
+	    	}
+	  	});
+	  }
+	});
+	
+	// アコーディオンメニュー
+	$("#acMenu dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$(".acItem dt").on("click", function() {
+		$(this).next().stop().slideToggle();
+		$(this).toggleClass("active");
+	});
+	$("#menu").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav").slideToggle();
+	});
+	$("#menu2").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav2").slideToggle();
+	});
+	$("#menu3").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav3").slideToggle();
+	});
+	$("#menu4").click(function(){
+		$(this).toggleClass("menuOpen");
+		$("ul.nav4").slideToggle();
+	});
+
+	// to-top-btn
+	$(function () {
+		$(".pageTop").hide();
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.pageTop').fadeIn();
+			} else {
+				$('.pageTop').fadeOut();
+			}
+		});
+		$('.pageTop a').click(function () {
+			$('body,html').animate({scrollTop: 0}, 500);
+			return false;
+		});
+	});
+});
+
+</script>
+</head>
+<body class="single-result">
+	<div id="frame">
+
+<!----------------------------------------------------------->
+<!---------------------- ヘッダーエリア -------------------------->
+<!----------------------------------------------------------->
+
+		<script type="text/javascript">
+			header();
+		</script>
+
+<!----------------------------------------------------------->
+<!---------------------- メインコンテンツ ------------------------->
+<!----------------------------------------------------------->
+
+<style>
+h2 img {
+	width: 20px;
+	margin-right: 10px;
+}
+.resultHead .right img {
+	width: 30px;
+	height: 30px;
+}
+.right img {
+	opacity: 0.5 ;
+	filter: alpha(opacity=50) ;	/* Ie用 */
+}
+#return {
+	height: 100%;
+	text-align: center;
+	margin: 30px 0 10px 0;
+}
+#return p {
+	width: 35px;
+	height: 35px;
+	background-image: url("img/common/cmn_return_off.png");
+    background-repeat:no-repeat;
+    -moz-background-size:contain;
+	background-size:contain; 
+}
+#return p:hover {
+	background-image: url("img/common/cmn_return_on.png");
+}
+</style>
+
+	<div id="pageInfo">
+		<h1 class="workPage"><img src="img/works/enishi_works_title.png" alt="実績紹介" /></h1>    
+	</div><!-- //#pageInfo -->
+	
+	<div id="contentsFrame">
+		<div id="contentsArea">
+			<div id="mainArea">
+				<h2>
+					<img src="img/common/cmn_titlel_icon.png" />
+					<a href="works.html" style=" color:#ffffff;text-decoration:none;">実績一覧</a>
+					　＞　<a href="works_pri_manage.html" style=" color:#ffffff;text-decoration:none;">民間管理</a>
+				</h2>
+				<div class="resultHead">
+					<div class="left">
+						<p class="resultTitle">R3年7月・ロイヤル食品工場</p>
+						<p>民間管理</p>
+					</div>
+					<div class="right">
+						<span><img class="hvr-pop" src="img/works/telus-link-icon.png"></span>
+					</div>
+				</div>
+				
+				<!-- no style in default gallery. -->
+				
+				<div id='gallery-1' class='gallery galleryid-5778 gallery-columns-3 gallery-size-large'>
+					<ul class='gallery-list'>
+						<li class='gallery-item landscape'> <p><img src="img/work_pri_manage47/01.jpg" /></p> <span class='wp-caption-text gallery-caption'>作業前</span> </li>
+						<li class='gallery-item landscape'> <p><img src="img/work_pri_manage47/02.jpg" /></p> <span class='wp-caption-text gallery-caption'>作業前</span> </li>
+						<li class='gallery-item landscape'> <p><img src="img/work_pri_manage47/03.jpg" /></p> <span class='wp-caption-text gallery-caption'>作業中</span> </li>
+						<li class='gallery-item landscape'> <p><img src="img/work_pri_manage47/04.jpg" /></p> <span class='wp-caption-text gallery-caption'>作業中</span> </li>
+						<li class='gallery-item landscape'> <p><img src="img/work_pri_manage47/05.jpg" /></p> <span class='wp-caption-text gallery-caption'>作業中</span> </li>
+						<li class='gallery-item landscape'> <p><img src="img/work_pri_manage47/06.jpg" /></p> <span class='wp-caption-text gallery-caption'>作業後</span> </li>
+						<li class='gallery-item landscape'> <p><img src="img/work_pri_manage47/07.jpg" /></p> <span class='wp-caption-text gallery-caption'>作業後</span> </li>
+					</ul>
+				</div>
+				<div class='gallery-pager'>
+					<li class='gallery-item'><a  data-slide-index="0" href=""><img src="img/work_pri_manage47/01.jpg" /></a></li>
+					<li class='gallery-item'><a  data-slide-index="1" href=""><img src="img/work_pri_manage47/02.jpg" /></a></li>
+					<li class='gallery-item'><a  data-slide-index="2" href=""><img src="img/work_pri_manage47/03.jpg" /></a></li>
+					<li class='gallery-item'><a  data-slide-index="3" href=""><img src="img/work_pri_manage47/04.jpg" /></a></li>
+					<li class='gallery-item'><a  data-slide-index="4" href=""><img src="img/work_pri_manage47/05.jpg" /></a></li>
+					<li class='gallery-item'><a  data-slide-index="5" href=""><img src="img/work_pri_manage47/06.jpg" /></a></li>
+					<li class='gallery-item'><a  data-slide-index="6" href=""><img src="img/work_pri_manage47/07.jpg" /></a></li>
+				</div>
+				<div id="return"><a href="works_pri_manage.html"><p class="hvr-push"></p></a></div>
+			</div>
+		</div>
+	</div>
+
+<!----------------------------------------------------------->
+<!---------------------- フッターエリア --------------------------->
+<!----------------------------------------------------------->
+
+		<script type="text/javascript">
+			footer();
+		</script>
+	
+</div><!-- /#frame -->
+
+</body>
+</html>
