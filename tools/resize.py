@@ -5,7 +5,7 @@ from PIL import Image
 
 #path = r'C://Users/user/Documents/GONZALEZ/www/img/work_pri_manage39'
 #path = r'X://写真/令和２年度/ロイヤル食品工場/6月作業・薬剤散布'
-path = r'c://tmp/resize-us'
+path = r'C://Users/PC08/Documents/www/img/work_gov_manage57'
 
 
 for file in os.listdir(path):

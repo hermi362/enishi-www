@@ -31,9 +31,9 @@ NewEntry = '''
 
 
 # here are your parameters
-theCaption = "R3年・高根町 資材小屋改修"
-seed = "pri_const"
-idx = "28"
+theCaption = "R3年・木戸川下流部除草"
+seed = "gov_manage"
+idx = "58"
 thumb = "thumb"
 
 # massage parameters
