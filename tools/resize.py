@@ -8,12 +8,18 @@ from PIL import Image
 path = r'C://Users/PC08/Documents/www/img/work_gov_manage57'
 
 
-for file in os.listdir(path):
-    f_img = path+"/"+file
-    print("resizing " + f_img)
-    img = Image.open(f_img)
-    exif = img.info['exif']   # get exif_data
-    img = img.resize((1280,960))
-    img.save(f_img, exif=exif)
 
-    
+size = (1280, 1280)
+
+for file in os.listdir(path):
+    infile = path+"/"+file
+    outfile = os.path.splitext(infile)[0] + ".thumb.jpg"
+    if infile != outfile:
+      try:
+        print("resizing " + outfile)
+        with Image.open(infile) as img:
+          img.thumbnail(size)
+          img.save(outfile, "JPEG")
+      except OSError:
+        print("cannot resize " + outfile)
+
