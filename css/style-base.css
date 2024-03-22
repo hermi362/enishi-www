@@ -115,7 +115,7 @@ a,a:hover{
 #fNaviArea,
 #footerArea,
 #copyArea {
-    width: 1150px;
+    width: 978px;
     margin: 0 auto;
 }
 
@@ -247,17 +247,14 @@ a,a:hover{
 }
 #gNaviArea li.menu1 {
 	padding-top: 5px;
-    width:159px;
     height:50px;
 }
 #gNaviArea li.menu2 {
 	padding-top: 5px;
-    width:159px;
     height:50px;
 }
 #gNaviArea li.menu3 {
 	padding-top: 5px;
-    width:159px;
     height:50px;
     background-image: url(../img/common/exclaim.png);
     background-repeat: no-repeat;
@@ -265,21 +262,27 @@ a,a:hover{
 }
 #gNaviArea li.menu4 {
 	padding-top: 5px;
-    width:159px;
     height:50px;
 }
 #gNaviArea li.menu5 {
 	padding-top: 5px;
-    width:159px;
     height:50px;
 }
 #gNaviArea li.menu6 {
 	padding-top: 5px;
-    width:159px;
     height:50px;
 }
 #gNaviArea .bar {
 	padding-top: 5px;
+}
+
+#gNaviArea li.menu1,
+#gNaviArea li.menu2,
+#gNaviArea li.menu3,
+#gNaviArea li.menu4,
+#gNaviArea li.menu5,
+#gNaviArea li.menu6 {
+  width: 135px;
 }
 
 #acMenu{
