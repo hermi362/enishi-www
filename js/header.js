@@ -30,6 +30,7 @@ function header(rootDir){
 	html += '<dd>';
 	html += '					<li><a href="http://www.studioenishi.jp/">トップページ</a></li>';
 	html += '					<li><a href="about.html">会社概要</a></li>';
+	html += '					<li><a href="philosophy.html">経営理念</a></li>';
 	html += '					<li><a href="green.html">グリーンデザイン</a></li>';
 	html += '					<li><a href="works.html">実績の紹介</a></li>';
 	html += '					<li><a href="flow.html">ご依頼の流れ</a></li>';
@@ -49,6 +50,12 @@ function header(rootDir){
 	html += '					<li class="menu5">';
 	html += '						<a href="about.html"><span class="menu_head">会</span>社概要<br>';
 	html += '							<span class="menu_caption">About</span>';
+	html += '						</a>';
+	html += '					</li>';
+	html += '					<li class="bar"><img src="img/common/cmn_hr.png" /></li>';
+	html += '					<li class="menu5">';
+	html += '						<a href="philosophy.html"><span class="menu_head">経</span>営理念<br>';
+	html += '							<span class="menu_caption">Philosophy</span>';
 	html += '						</a>';
 	html += '					</li>';
 	html += '					<li class="bar"><img src="img/common/cmn_hr.png" /></li>';
