@@ -51,7 +51,7 @@ function footer(rootDir){
 	html += '		<div class="area02">';
 	html += '			<ul>';
 	html += '				<li class="li01">船橋本社事務所</li>';
-	html += '				<li class="li02">〒273-0012　千葉県船橋市浜町1-6ファミリータウン5棟112</li>';
+	html += '				<li class="li02">〒273-0012　千葉県船橋市浜町1-6ファミリータウン5棟113</li>';
 	html += '				<li class="tel"><img src="img/common/cmn_tel_img.png"><span>営業時間 08：00～17：00</span></li>';
 	html += '				<li class="li03"><a href="contact.html">ファックスのお客様は会社概要ページより、問い合わせフォームもご用意しております。</a></li>';
 	html += '			</ul>';
